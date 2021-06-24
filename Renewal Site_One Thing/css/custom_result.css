@@ -1,0 +1,28 @@
+/* header영역 */
+header{background-color: #FBF6F2;}
+
+/* result영역 */
+.result{background-image: url(../img/custom\ big\ logo.png); background-repeat: no-repeat; background-position: right bottom;}
+.result{width: 100%; background-color: #FBF6F2; }
+.result_section{padding-top: 55px; padding-bottom: 85px;}
+.result_section .top{margin-bottom: 50px;}
+.result_section .top::after{content: ''; display: block; clear: both;}
+.result_section .text{float: left;}
+.result_section .text span{font-size: 25px; font-weight: 500;}
+.result_section .text h3{display: block; margin-top: 10px;}
+.result_section .top button{float: right;}
+
+.result_section .list{display: flex; justify-content: center; align-items: flex-end; }
+.result_section .list .content{display: flex; align-items: center; flex-direction: column;}
+.result_section .list .content img{}
+.result_section .list .content:nth-of-type(1){background-color: #F6EDE6; width: 480px; border-radius: 415px;}
+.result_section .list .content span{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
+.result_section .list .content p{font-size: 25px; font-weight: bold; padding-bottom: 10px;}
+.result_section .list .content small{font-size: 17px; font-weight: 500; margin-bottom: 15px;}
+.result_section .list .content svg{margin-top: 20px;}
+
+
+
+
+
+

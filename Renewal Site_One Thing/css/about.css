@@ -1,0 +1,38 @@
+
+/* main영역 */
+.main{background-color: #F8F3EF; width: 100%;}
+.main_section{padding-top: 205px; padding-bottom: 300px;}
+.main_section::after{content: ''; display: block; clear: both;}
+.main_section .main_text{display: flex; float:left; justify-content: center; flex-direction: column; margin-top: 75px;}
+.main_section .main_text h3{}
+.main_section .main_text span{font-size: 2rem; margin-top: 40px;}
+.main_section .main_text span:nth-of-type(2){display: none;}
+.main_section img{float: right;}
+
+/* insta영역 */
+.insta{width: 100%; background-color: #fff; text-align: center;}
+.insta_section {padding-top: 130px; padding-bottom: 105px; display: flex; justify-content: center; flex-direction: column;}
+.insta_section span{font-size: 2rem; margin-top: 40px;}
+.insta_section .insta_img{display: flex; justify-content: space-between; align-items: center; margin-top: 70px;}
+.insta_section .insta_img .img{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.insta_section .insta_img .img > div{width: 175px; height: 175px; background-color: #F8F3EF; margin-bottom: 30px;}
+
+/* :hover */
+.insta_section .insta_img .img > div:hover{background:rgba(0, 0, 0, 0.3);}
+
+@media (max-width: 767px) {
+
+    /* main영역 */
+    .main_section{position: relative; padding-top: 200px; padding-bottom: 40px;}
+    .main_section img{width: 100%; position: absolute; top: 30px; left: 0;}
+    .main_section .main_text span:nth-of-type(1){display: none;}
+    .main_section .main_text span:nth-of-type(2){font-size: 1rem; line-height: 2rem; display: inline-block; text-align: justify; margin-top: 20px;}
+
+    /* insta영역 */
+    .insta_section{padding-top: 45px; padding-bottom: 0;}
+    .insta_section span{font-size: 1rem; line-height: 2rem; margin-top: 20px;}
+    .insta_section .insta_img{padding: 40px 0px; margin-top: 0; }
+    .insta_section .insta_img .img > div{width: 100px; height:100px; background-color: #F8F3EF; margin-bottom: 10px;}
+    .insta_section .insta_img .img > div:nth-child(4n){display: none;}
+    .prev, .next{display: none;}
+}
