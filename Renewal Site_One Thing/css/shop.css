@@ -59,15 +59,15 @@ header{width: 100%; background-color: #fff;}
 
 @media (max-width: 767px) {
     /* text영역 */
-    .text_section{margin-top: 100px; width: 100%;}
+    .text_section{margin-top: 55px; width: 100%;}
     .text_section > div{justify-content: space-between; align-items: center; position: relative;}
     .text_section > div h3{font-size: 2.5rem; margin-right: 0px;}
-    .text_section > div .menu{display: none; position: absolute; top: 35px; left: 0; border: 1px solid #000;}
+    .text_section > div .menu{display: flex; opacity: 0; position: absolute; top: 35px; left: 0; z-index: 5; transition: 0.5s ease-in-out;}
     .text_section > div .menu li{font-size: 1rem; margin-right: 40px;}
     .nav-icon{display: block;}
 
-    /* 질문: ul menu를 .nav-icon을 누르면 나오게 하고 싶은데..안나온다 */
-    .nav-icon:hover ul{display: flex;}
+    /* :hover영역 */
+    .nav-icon:hover + .menu{opacity:1;}
 
     /* product영역 */
     .product_section{padding-top: 40px; padding-bottom: 40px;}

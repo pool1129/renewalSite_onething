@@ -8,20 +8,35 @@ header{background-color: #FBF6F2;}
 .result_section .top{margin-bottom: 50px;}
 .result_section .top::after{content: ''; display: block; clear: both;}
 .result_section .text{float: left;}
-.result_section .text span{font-size: 25px; font-weight: 500;}
+.result_section .text span{font-size: 2.5rem;}
 .result_section .text h3{display: block; margin-top: 10px;}
 .result_section .top button{float: right;}
 
-.result_section .list{display: flex; justify-content: center; align-items: flex-end; }
+.result_section .list{display: flex; justify-content: center; align-items: flex-end;}
 .result_section .list .content{display: flex; align-items: center; flex-direction: column;}
 .result_section .list .content img{}
 .result_section .list .content:nth-of-type(1){background-color: #F6EDE6; width: 480px; border-radius: 415px;}
-.result_section .list .content span{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
-.result_section .list .content p{font-size: 25px; font-weight: bold; padding-bottom: 10px;}
-.result_section .list .content small{font-size: 17px; font-weight: 500; margin-bottom: 15px;}
+.result_section .list .content span{font-size: 2rem; margin-bottom: 20px;}
+.result_section .list .content p{font-size: 2.5rem; font-weight: bold; padding-bottom: 10px;}
+.result_section .list .content small{font-size: 1.7rem; margin-bottom: 15px;}
 .result_section .list .content svg{margin-top: 20px;}
 
+@media (max-width: 767px) {
+    .result{background-image:none; overflow: hidden;}
+    .result_section{padding-bottom: 55px;}
+    .result_section .text span{font-size: 1rem;}
+    .result_section .top button{margin-top: 5px;}
 
+    .result_section .list{background-color: #F6EDE6; width: 480px; border-radius: 415px;}
+    .result_section .list .content{}
+    .result_section .list .content:nth-of-type(1){background: none; border-radius: 0;}
+    .result_section .list .content:nth-of-type(2){margin: 0px 10px;}
+    .result_section .list .content img{width: 100%;}
+    .result_section .list .content span{font-size: 1rem;}
+    .result_section .list .content p{font-size: 1.5rem;}
+    .result_section .list .content small{font-size: 1rem;}
+    .result_section .list .content svg{width: 25px; height: 25px; margin-top: 0;}
+}
 
 
 
