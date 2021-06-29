@@ -1,0 +1,33 @@
+/* header영역 */
+header{background-color: #fff;}
+
+/* main영역 */
+.main{background-image: url(../img/custombiglogo.png); background-repeat: no-repeat; background-position: right bottom;}
+.main_section{width:100%; padding-top: 40px; padding-bottom: 50px; text-align: center;}
+.main_section p{font-size: 2rem; color: #805E40; font-weight: bold; margin-bottom: 30px;}
+.main_section h3{font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; font-weight: bold;}
+.main_section .slide_bar{margin-top: 30px; display: block; width: 80%; height: 10px; background: rgba(128, 94, 64, 0.15); margin-bottom: 50px; display: inline-block; }
+.main_section .slide_bar::before{content: ''; display: block; width: 16%; height: 10px; background: #805E40;}
+
+/* select_section영역 */
+.select_section{display: flex; justify-content: space-between; padding-left: 10%; padding-right: 10%; flex-wrap: wrap; margin-bottom: 20px;}
+.select_section > div{background-color:#fff; width: 18%; border: 1px solid #000; margin-bottom: 24px; padding: 70px 45px; font-size: 2.4rem;}
+
+
+.main_section a:nth-of-type(1) button{margin-right: 30px; background-color: #fff; border: 4px solid #805E40; color: #6A6A6A;}
+.main_section a:nth-of-type(2) button{color: #fff;}
+
+/* :hover */
+.select_section > div:hover{background-color: rgba(128, 94, 64, 0.8); color: #fff; font-weight: bold;}
+
+@media (max-width: 767px) {
+    .main{background-size: 65%;}
+    .select_section{padding: 0;}
+    .main_section {padding-top: 45px;}
+    .main_section p{font-size: 1rem; margin-bottom: 10px;}
+    .main_section h3{font-size: 1.5rem;}
+    .main_section .slide_bar{height: 4px; margin: 10px 0px 35px;}
+    .main_section .slide_bar::before{height: 4px;}
+    .select_section > div{font-size: 1rem; padding: 5%; width: 17%; margin-bottom: 3%;}
+    .main_section a:nth-of-type(1) button{border: 2px solid #805E40;}
+}
