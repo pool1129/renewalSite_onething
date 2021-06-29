@@ -35,6 +35,7 @@ header{width: 100%; background-color: #F8F3EF;}
 .header .menu p:last-child{margin-right: 0;}
 .header .icon{}
 .header .icon svg{margin-right: 30px;}
+.header .icon .search{display: inline-block;}
 .header .icon .account{margin-right: 0;}
 
 /* hover영역 */

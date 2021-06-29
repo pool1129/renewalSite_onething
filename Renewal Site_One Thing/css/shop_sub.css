@@ -35,7 +35,7 @@ header{background-color: #fff;}
 /* effect영역 */
 .effect{background-color: #F8F3EF; width: 100%;}
 .effect .container > img{display: none;}
-.effect > h2{display: none;}
+.effect .container h2{display: none;}
 .effect_section{}
 .effect_section::after{display: block; content: ''; clear: both;}
 .effect_section .left{float: left; width: 55%; position: relative;}

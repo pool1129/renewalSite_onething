@@ -2,7 +2,7 @@
 header{background-color: #FBF6F2;}
 
 /* result영역 */
-.result{background-image: url(../img/custom\ big\ logo.png); background-repeat: no-repeat; background-position: right bottom;}
+.result{background-image: url(../img/custombiglogo.png); background-repeat: no-repeat; background-position: right bottom;}
 .result{width: 100%; background-color: #FBF6F2; }
 .result_section{padding-top: 55px; padding-bottom: 85px;}
 .result_section .top{margin-bottom: 50px;}

@@ -2,7 +2,7 @@
 header{background-color: #fff;}
 
 /* main영역 */
-.main{background-image: url(../img/custom\ big\ logo.png); background-repeat: no-repeat; background-position: right bottom;}
+.main{background-image: url(../img/custombiglogo.png); background-repeat: no-repeat; background-position: right bottom;}
 .main_section{width:100%; padding-top: 40px; padding-bottom: 50px; text-align: center;}
 .main_section p{font-size: 2rem; color: #805E40; font-weight: bold; margin-bottom: 30px;}
 .main_section h3{font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; font-weight: bold;}
