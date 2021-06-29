@@ -1,7 +1,7 @@
 @import url(common.css);
 
 /* main영역 */
-.main{background-color: #F8F3EF; width: 100%;}
+.main{background-color: #F8F3EF; width: 100%; overflow: hidden;}
 .main::before{content: ''; display: block; width: 630px; height: 850px; background-color: #F6EDE6; border-radius: 315px; float: right; margin-right: 100px; margin-top: 80px;}
 
 .main_section{background-image: url(../img/header\ big\ logo\ img.png); background-repeat: no-repeat; background-position: right 200px; position: relative; padding-bottom: 150px;}

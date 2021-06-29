@@ -58,27 +58,26 @@ footer > span::before{width: 100%; content: ''; display: block; border-bottom: 1
 
 /* mobile */
 @media (max-width: 767px) {
-    .container{width: 320px;}
+    .container{width: 90%;}
     button{width: 130px; height: 35px; font-size: 1rem; letter-spacing: 0.5rem;}
     p, button, a, h1, h2, h3, h4, h5, h6, tr, span, li, div, input, textarea, select, caption, table th, table td{line-height: 1.5rem; font-size: 1rem;}
     h3{font-size: 2.5rem;}
 
     /* header영역 */
 
-    /* 질문 : menu 부분을 100%으로 했는데 영역을 넘어갑니다..ㅜ */
     header{ z-index: 999; width: 100%;}
-    .header{padding: 20px;}
-    .header .logo img{width: 50%;} 
+    .header{padding: 20px; position: relative; overflow: visible;}
+    .header .logo img{width:100px;} 
     .header .icon svg{margin-right: 0; width: 20px; height: 20px; margin-right: 10px; }
-    header .header .menu{width: 100%; position: absolute; top: 50px; border: 1px solid #000; display: flex; justify-content: space-between;}
+    .header .icon svg:last-child{margin-right: 0;}
+    header .header .menu{left:0; padding: 0px 20px; width: 100%; position: absolute; top: 50px; display: flex; justify-content: space-between;}
     .header .menu p{margin-right: 0;}
 
 
     /* footer영역 */
     footer{padding: 20px;}
     footer > span{font-size: 1rem; padding-top: 10px;}
-    .footer .logo img{width: 30%;}
-    /* 질문 : 헤더 로고와 동일한 비율로 줄이고 싶은데 동일하게 줄지를 않아요ㅜ*/
+    .footer .logo img{width: 100px;}
     .footer{flex-direction: column;}
     .footer_text span{font-size: 1rem; margin-top: 10px; display: inline-block;}
     .sns{justify-content: center; margin-top: 20px;}
