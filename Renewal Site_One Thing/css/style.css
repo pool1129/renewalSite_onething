@@ -37,11 +37,11 @@
 .best_section button{}
 .best_section .list{padding-top: 120px; padding-bottom: 195px; width: 100%; display: flex;}
 .best_section .list .contents{flex-shrink: 0; width: 35%; padding: 25px; border-radius: 20px; background-color: #F6EDE6; box-shadow: 2px 2px 5px rgba(0,0,0,0.10); margin-right: 30px; position: relative; text-align: center; height: auto;}
-.best_section .list .contents #heart{position: absolute; top: 25px; left: 25px;}
+.best_section .list .contents .heart{position: absolute; top: 25px; left: 25px;}
 .best_section .list .contents img{}
 .best_section .list .contents h4{font-size: 2.3rem; font-weight: bold;}
 .best_section .list .contents p{font-size: 2rem; margin-top: 15px;}
-.best_section .list .contents #add{margin-top: 20px;}
+.best_section .list .contents .add{margin-top: 20px;}
 
 /* personal영역 */
 .personal{background-color: #FBF6F2; width: 100%; background-image: url(../img/tree2.png); background-repeat: no-repeat; background-position: right top;}
@@ -98,11 +98,11 @@
     .best_section button{display: none;}
     .best_section .list{padding: 0;}
     .best_section .list .contents{width: 60%; margin-right: 20px; padding: 10px;}
-    .best_section .list .contents #heart{top: 15px; left: 15px; width: 20px; height: 20px;}
+    .best_section .list .contents .heart{top: 15px; left: 15px; width: 20px; height: 20px;}
     .best_section .list .contents img{width: 130px; height: 170px;}
     .best_section .list .contents h4{font-size: 1.25rem;}
     .best_section .list .contents p{font-size: 1rem; margin-top: 10px;}
-    .best_section .list .contents #add{margin-top: 10px; width: 20px; height: 20px;} 
+    .best_section .list .contents .add{margin-top: 10px; width: 20px; height: 20px;} 
 
 
     /* personal영역 */

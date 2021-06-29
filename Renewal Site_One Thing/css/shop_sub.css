@@ -192,7 +192,7 @@ header{background-color: #fff;}
 
     .with_section .list .contents h4{font-size: 1.25rem;}
     .with_section .list .contents p{font-size: 1rem;}
-    .with_section .list .contents #add{width: 25px; height: 25px;}
+    .with_section .list .contents .add{width: 25px; height: 25px;}
 
     /* review영역 */
     .review_section{padding: 50px 0px 40px;}

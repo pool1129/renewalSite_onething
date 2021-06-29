@@ -35,7 +35,7 @@ header{width: 100%; background-color: #F8F3EF;}
 .header .menu p:last-child{margin-right: 0;}
 .header .icon{}
 .header .icon svg{margin-right: 30px;}
-.header .icon #account{margin-right: 0;}
+.header .icon .account{margin-right: 0;}
 
 /* hover영역 */
 .header .menu p::after{content: ''; display: block; padding-top: 8px; transform: scaleX(0); transition: transform 250ms ease-in-out; transform-origin: 0% 50%; border-bottom: 3px solid #805E40;}
