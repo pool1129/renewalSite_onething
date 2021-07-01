@@ -12,7 +12,7 @@
 .notice_section span{font-size: 2.5rem;}
 .notice_section h3{display: block; margin-top: 20px;}
 
-.notice_section table{text-align: center; width: 100%; margin-top: 85px; border-top: 2px solid #707070;}
+.notice_section table{text-align: center; width: 100%; margin-top: 85px; border-top: 2px solid #707070; border-collapse:collapse;}
 .notice_section table thead{font-size: 2.5rem; font-weight: bold; height: 60px;}
 .notice_section table thead th{height: 60px; border-bottom: 1px solid #707070;}
 
@@ -20,7 +20,7 @@
 .notice_section table tbody tr{height: 75px;}
 .notice_section table tbody tr td{border-bottom: 1px solid #707070;}
 .notice_section table tbody tr td:nth-of-type(2){font-size: 2rem; font-weight: bold; text-align: start;}
-.notice_section table th, .notice_section table td{line-height: 7.5rem;}
+
 
 .notice_section .nav{margin-top: 80px;}
 .notice_section .nav ul{display: flex; justify-content: center;}
