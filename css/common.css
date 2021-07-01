@@ -3,11 +3,11 @@
 
 /* reset영역 */
 html{font-size: 10px;}
-*, img{padding: 0; margin: 0; box-sizing: border-box;}
+*, img{padding: 0; margin: 0; box-sizing: border-box; vertical-align: top;}
 a{text-decoration: none;}
 ul, li{list-style: none; text-decoration: none; color: #6A6A6A;}
-body{margin: 0 auto; font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif;}
-.container{width: 1200px; margin: 0 auto;}
+body{margin: 0 auto; font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; }
+.container{ margin: 0 auto; width: 1200px;}
 p, button, a, h1, h2, h3, h4, h5, h6, tr, span, li, div, input, textarea, select, caption, table th, table td {
     font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; 
     color: #6A6A6A; font-weight: 500; line-height: 3.5rem;}
