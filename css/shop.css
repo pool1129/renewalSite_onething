@@ -7,7 +7,7 @@ header{width: 100%; background-color: #fff;}
 .text_section{margin-top: 100px; width: 100%;}
 .text_section::after{content: ''; display: block; border-bottom: 1px solid #707070; margin-top: 15px;}
 .text_section > div{display: flex; align-items: flex-end;}
-.text_section > div h3{font-size: 5.5rem; margin-right: 300px;}
+.text_section > div h3{font-size: 5.5rem; margin-right: 400px;}
 .text_section > div .menu{display: flex;}
 .text_section > div .menu li{font-size: 2rem; margin-right: 80px; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
 .text_section > div .menu li:last-child{margin-right: 0;}

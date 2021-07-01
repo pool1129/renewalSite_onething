@@ -20,6 +20,7 @@
 .notice_section table tbody tr{height: 75px;}
 .notice_section table tbody tr td{border-bottom: 1px solid #707070;}
 .notice_section table tbody tr td:nth-of-type(2){font-size: 2rem; font-weight: bold; text-align: start;}
+.notice_section table th, .notice_section table td{line-height: 7.5rem;}
 
 .notice_section .nav{margin-top: 80px;}
 .notice_section .nav ul{display: flex; justify-content: center;}
@@ -28,6 +29,7 @@
 .notice_section .nav ul li:last-child{margin-right: 0;}
 
 .notice_section .search{margin-top: 50px;}
+
 
 @media (max-width: 767px) {
 
