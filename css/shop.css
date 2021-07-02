@@ -43,7 +43,7 @@ header{width: 100%; background-color: #fff;}
 .flip_container .flipper .front p{font-size: 2rem; font-weight: bold;}
 
 .flip_container .flipper .back{transform:rotateY(180deg); width: 100%; height: 100%; border-radius: 20px; background-color: rgba(106, 106, 106, 0.7); box-shadow: 2px 2px 5px rgba(0,0,0,0.10); display: flex; justify-content: center; align-items: center;}
-.flip_container .flipper .back .look{background-color: #F8F3EF; width: 200px; height: 60px; font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; color :#6A6A6A; font-size: 1.5rem;}
+.flip_container .flipper .back .look{background-color: #F8F3EF; width: 200px; height: 60px; font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; color :#6A6A6A; font-size: 1.5rem; border-radius: 40px; border: none; letter-spacing: 1rem; font-weight: bold; cursor: pointer; outline: none;}
 
 .back, .front{position: absolute; backface-visibility:hidden;}
 

@@ -2,19 +2,22 @@
 
 /* main영역 */
 .main{background-color: #F8F3EF; width: 100%; overflow: hidden;}
+.main .container{}
 .main::before{content: ''; display: block; width: 630px; height: 850px; background-color: #F6EDE6; border-radius: 315px; float: right; margin-right: 100px; margin-top: 80px;}
 
 .main_section{background-image: url(../img/headerbiglogoimg.png); background-repeat: no-repeat; background-position: right 200px; position: relative; padding-bottom: 150px;}
+
 .main_section .text{display: flex; flex-direction: column; padding-top: 420px;}
 .main_section .text span{display: block; font-size: 2.5rem; font-family: 'Montserrat', sans-serif;}
 .main_section .text h2{font-size: 5rem; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: 20px;}
-.main_section .text p{font-size: 2rem; font-weight: bold; margin-top: 35px;}
+.main_section .text p{font-size: 2rem; font-weight: bold; margin-top: 35px; width: 85%;}
 .main_section button{margin-top: 65px;}
-.main_section .slide_bar{margin-top: 60.5px; display: block; width: 55%; height: 5px; background: rgba(128, 94, 64, 0.15);}
-.main_section .slide_bar::before{content: ''; display: block; width: 20%; height: 5px; background: #805E40;}
+.main_section .slide_bar{margin-top: 60.5px; display: block; width: 50%; height: 5px; background: rgba(128, 94, 64, 0.15);}
+.main_section .slide_bar .status{width: 0%; height: 5px; background: #805E40;}
 
-.main_section .main_img {position: absolute; right: -220px; top: 70px; vertical-align: top; overflow: hidden;}
-.main_section .main_img img{width: 100%;}
+.main_section .main_img {position: absolute; right: -220px; top: 70px; overflow: hidden; width: 690px; height: 900px; vertical-align: top;}
+.main_section .main_img img{width: 100%; opacity: 0; z-index: 0; position: absolute; transition:  opacity 1.5s ease-out;}
+.main_section .main_img .showing{z-index: 1; opacity: 1;}
 
 /* about영역 */
 .about{width: 100%; background-color: #FBF6F2;}
