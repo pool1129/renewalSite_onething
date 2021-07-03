@@ -14,8 +14,7 @@
 .insta_section {padding-top: 130px; padding-bottom: 105px; display: flex; justify-content: center; flex-direction: column;}
 .insta_section span{font-size: 2rem; margin-top: 40px;}
 .insta_section .insta_img{margin-top: 70px;}
-.insta_section .insta_img .img{display: flex; justify-content: space-between; flex-wrap: wrap;}
-.insta_section .insta_img .img > div{width: 175px; height: 175px; background-color: #F8F3EF; margin-bottom: 30px;}
+
 
 /* :hover */
 .insta_section .insta_img .img > div:hover{background:rgba(0, 0, 0, 0.3);}

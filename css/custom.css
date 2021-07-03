@@ -3,28 +3,32 @@ header{background-color: #fff;}
 
 /* main영역 */
 .main{background-image: url(../img/custombiglogo.png); background-repeat: no-repeat; background-position: right bottom;}
-.main_section{width:100%; padding-top: 100px; padding-bottom: 120px; text-align: center;}
+.main_section{width:100%; padding-top: 130px; padding-bottom: 130px; text-align: center;}
 .main_section p{font-size: 2rem; color: #805E40; font-weight: bold; margin-bottom: 30px;}
 .main_section h3{font-family:'NanumSquare', 'Nanum Gothic', 'MalgunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif; font-weight: bold;}
-.main_section .slide_bar{margin-top: 50px; display: block; width: 80%; height: 10px; background: rgba(128, 94, 64, 0.15); margin-bottom: 50px; display: inline-block; }
+.main_section .slide_bar{margin-top: 60px; display: block; width: 80%; height: 10px; background: rgba(128, 94, 64, 0.15); margin-bottom: 80px; display: inline-block; }
 .main_section .slide_bar .status{width: 10%; height: 10px; background: #805E40;}
 
 
 /* select_section영역 */
 .select_section{display: flex; justify-content: space-between; padding-left: 10%; padding-right: 10%; flex-wrap: wrap; margin-bottom: 20px;}
-.select_section > div{background-color:#fff; width: 18%; border: 1px solid #000; margin-bottom: 24px; padding: 70px 45px; font-size: 2.4rem;}
+.select_section > div{background-color:#fff; width: 18%; border: 1px solid #6a6a6a; margin-bottom: 24px; padding: 70px 45px; font-size: 2.4rem;}
+
+.anwerBox{height: 100%; padding-bottom: 10px;}
+.answerList {border: 1px solid #6a6a6a; width: 80%; padding: 15px; margin: 20px; height: 25%; background-color: #fff; font-size: 2.4rem;}
 
 /* :hover */
-.select_section > div:hover{background-color: rgba(128, 94, 64, 0.8); color: #fff; font-weight: bold;}
+.answerList:hover{background-color: rgba(128, 94, 64, 0.8); color: #fff; font-weight: bold;}
 
 @media (max-width: 767px) {
     .main{background-size: 65%;}
     .select_section{padding: 0;}
-    .main_section {padding-top: 45px; padding-bottom: 60px;}
+    .main_section {padding-top: 70px; padding-bottom: 60px;}
     .main_section p{font-size: 1rem; margin-bottom: 10px;}
     .main_section h3{font-size: 1.25rem;}
     .main_section .slide_bar{height: 4px; margin: 20px 0px 35px;}
     .main_section .slide_bar .status{height: 4px;}
     .select_section > div{font-size: 1rem; padding: 5%; width: 17%; margin-bottom: 3%;}
-    button {width: 80%;}
+    
+    .answerList{font-size: 1rem; padding: 10px; margin: 5px;}
 }

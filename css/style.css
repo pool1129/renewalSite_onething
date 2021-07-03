@@ -45,6 +45,8 @@
 .best_section .list .contents h4{font-size: 2.3rem; font-weight: bold;}
 .best_section .list .contents p{font-size: 2rem; margin-top: 15px;}
 .best_section .list .contents .add{margin-top: 20px;}
+.best_section .list .contents button{display: none;}
+
 
 /* personal영역 */
 .personal{background-color: #FBF6F2; width: 100%; background-image: url(../img/tree2.png); background-repeat: no-repeat; background-position: right top;}
@@ -78,7 +80,7 @@
     .main_section .text span{display: inline-block; font-size: 1rem;}
     .main_section .text h2{font-size: 2rem; margin-top: 15px;}
     .main_section .text p{margin-top: 20px; line-height: 2rem; font-size: 1rem; font-weight: 500;}
-    .main_section button{margin-top: 15px; margin-bottom: 15px;}
+    .main_section .nomal_btn{margin-top: 15px; margin-bottom: 15px;}
     .main_section .slide_bar{display: none;}
 
     
@@ -98,14 +100,15 @@
     .best{background-size: 60%;}
     .best_section{text-align: center; padding-bottom: 50px; padding-top: 40px;}
     .bestTop_section{display: block; padding-top: 0px; padding-bottom: 40px;}
-    .best_section button{display: none;}
+    .best_section .nomal_btn{display: none;}
     .best_section .list{padding: 0;}
-    .best_section .list .contents{width: 60%; margin-right: 20px; padding: 10px;}
-    .best_section .list .contents .heart{top: 15px; left: 15px; width: 20px; height: 20px;}
+    .best_section .list .contents{width: 60%; margin-right: 20px; padding: 10px; padding-top: 0;}
+    .best_section .list .contents button{display: block; background-color: #F8F3EF; width: 200px; height: 60px; font-size: 1.5rem; width: 130px; height: 35px;}
+    .best_section .list .contents .heart{top: 15px; left: 15px; width: 20px; height: 20px;} 
     .best_section .list .contents img{width: 130px; height: 170px;}
-    .best_section .list .contents h4{font-size: 1.25rem;}
-    .best_section .list .contents p{font-size: 1rem; margin-top: 10px;}
-    .best_section .list .contents .add{margin-top: 10px; width: 20px; height: 20px;} 
+    .best_section .list .contents h4{font-size: 1.3rem;}
+    .best_section .list .contents p{font-size: 1.25rem; margin-top: 5px;}
+    .best_section .list .contents .add{display: none;} 
 
 
     /* personal영역 */

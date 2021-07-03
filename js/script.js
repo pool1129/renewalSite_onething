@@ -11,6 +11,7 @@ function addAnswer(answerText, qIdx, Idx){
     answer.innerHTML = answerText;
 
     answer.addEventListener("click", function(){
+
         var children = document.querySelectorAll('.answerList');
 
         for (let i = 0; i < children.length; i++ ){
