@@ -29,3 +29,18 @@
     animation: fadeOut;
     animation-duration: 0.5s;
 }
+
+/* nav_icon */
+.nav_icon.active div:nth-of-type(1) {
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(-45deg);
+}
+
+.nav_icon.active div:nth-of-type(2) {opacity: 0;}
+
+.nav_icon.active div:nth-of-type(3) {
+    -webkit-transform: translateY(-7px) rotate(45deg);
+    transform: translateY(-7px) rotate(45deg);
+}
+
+.nav_menu.active {transform: translateX(0%); display: block;}

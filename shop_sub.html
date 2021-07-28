@@ -5,36 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Thing</title>
+
+    <!-- style -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/shop_sub.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="메인로고"></a>
-            </div>
-            <div class="menu">
-                <p><a href="about.html">우리의 비전</a></p>
-                <p><a href="custom.html">나만의 제품</a></p>
-                <p><a href="shop.html">제품구매</a></p>
-                <p><a href="notice.html">공지사항</a></p>
-            </div>
-            <div class="icon">
-                <svg  xmlns="http://www.w3.org/2000/svg" width="32.004" height="32.004" viewBox="0 0 32.004 32.004">
-                    <path  data-name="패스 7" d="M0,0H32V32H0Z" fill="none"/>
-                    <path data-name="패스 8" d="M19.669,17.669H18.615l-.373-.36a8.681,8.681,0,1,0-.933.933l.36.373v1.053l6.668,6.654,1.987-1.987Zm-8,0a6,6,0,1,1,6-6A5.993,5.993,0,0,1,11.668,17.669Z" transform="translate(1.001 1.001)" fill="#6a6a6a"/>
-                </svg>
-                <svg  xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <rect  data-name="사각형 5" width="32" height="32" fill="none"/>
-                    <path  data-name="패스 9" d="M25,7.6H22A5.809,5.809,0,0,0,16,2a5.809,5.809,0,0,0-6,5.6H7a2.914,2.914,0,0,0-3,2.8V27.2A2.914,2.914,0,0,0,7,30H25a2.914,2.914,0,0,0,3-2.8V10.4A2.914,2.914,0,0,0,25,7.6ZM16,4.8a2.914,2.914,0,0,1,3,2.8H13A2.914,2.914,0,0,1,16,4.8Zm9,22.4H7V10.4h3v2.8a1.5,1.5,0,0,0,3,0V10.4h6v2.8a1.5,1.5,0,0,0,3,0V10.4h3Z" fill="#6a6a6a"/>
-                </svg>
-                <svg  xmlns="http://www.w3.org/2000/svg" width="32.004" height="32.004" viewBox="0 0 32.004 32.004">
-                    <path  data-name="패스 3" d="M0,0H32V32H0Z" fill="none"/>
-                    <path  data-name="패스 4" d="M15.335,2A13.335,13.335,0,1,0,28.67,15.335,13.34,13.34,0,0,0,15.335,2ZM8.761,23.71c.573-1.2,4.067-2.374,6.574-2.374s6.014,1.173,6.574,2.374a10.569,10.569,0,0,1-13.148,0Zm15.055-1.934c-1.907-2.32-6.534-3.107-8.481-3.107s-6.574.787-8.481,3.107a10.668,10.668,0,1,1,16.962,0ZM15.335,7.334A4.667,4.667,0,1,0,20,12,4.655,4.655,0,0,0,15.335,7.334Zm0,6.668a2,2,0,1,1,2-2A2,2,0,0,1,15.335,14Z" transform="translate(0.667 0.667)" fill="#6a6a6a"/>
-                </svg>   
-            </div>
-        </div>
     </header>
     <!-- header영역 -->
 
@@ -42,7 +23,7 @@
         <article class="main">
             <div class="container">
                 <div class="main_section">
-                    <img src="img/sub_product.png" alt="상품메인">
+                    <img src="img/productmainimg1.png" alt="상품메인">
 
                     <div class="text">
                         <p>병풀 추출물 병풀 원액</p>
@@ -50,42 +31,38 @@
                             Extract</h3>
                         <span>허브의 일종인 병풀의 아사티코사이드, 마데카식애씨 등의
                             성분이 피부 진정과 수분 관리에 도움을 줍니다.</span>
-                        <small>11,000</small>
-                        <h3>6,600</h3>
-
-                        <button class="mobile_buy" type="button" class="nomal_btn">구매하기</button>
+                        <small>11,000원</small>
+                        <h3>6,600원</h3>
 
                         <div class="select_contain">
                             <div class="capacity">
                                 <p>용량</p>
-                                <div class="select">
-                                    <p>150ml</p>
-                                    <svg  xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
-                                        <path  data-name="패스 16" d="M34,34H0V0H34Z" fill="none" opacity="0.87"/>
-                                        <path  data-name="패스 17" d="M21,8.59l-6.5,6.488L8,8.59l-2,2,8.5,8.5,8.5-8.5Z" transform="translate(2.5 3.579)" fill="#6a6a6a"/>
-                                    </svg>     
-                                </div>
-                                <div class="select_option">
-                                    <p>150ml</p>
-                                    <p>300ml</p>
-                                </div>
+
+                                <select class="select">
+                                    <option value="150ml">150ml</option>
+                                    <option value="300ml">300ml</option>
+                                </select>
+
                             </div>
 
                             <div class="number">
                                 <p>수량</p>
                                 <div class="count">
-                                <a href=""><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <a  onclick='count("minus")' value='-'><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
                                     <path  data-name="패스 14" d="M0,0H40V40H0Z" fill="none"/>
                                     <path  data-name="패스 15" d="M11,18.2v3.6H29V18.2ZM20,2A18,18,0,1,0,38,20,18.007,18.007,0,0,0,20,2Zm0,32.4A14.4,14.4,0,1,1,34.4,20,14.419,14.419,0,0,1,20,34.4Z" transform="translate(0 0)" fill="#939393"/>
                                 </svg></a>
-                                <h4>2</h4>
-                                <a href=""><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <h4>1</h4>
+                                <a onclick='count("plus")' value='+'><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
                                     <path data-name="패스 10" d="M0,0H40V40H0Z" fill="none"/>
                                     <path data-name="패스 11" d="M20.586,10.448H17.207v6.759H10.448v3.379h6.759v6.759h3.379V20.586h6.759V17.207H20.586ZM18.9,2a16.9,16.9,0,1,0,16.9,16.9A16.9,16.9,0,0,0,18.9,2Zm0,30.414A13.517,13.517,0,1,1,32.414,18.9,13.535,13.535,0,0,1,18.9,32.414Z" transform="translate(1.103 1.103)" fill="#939393"/>
                                 </svg></a>                                  
                                 </div>
                             </div>
                         </div>
+
+                        <button type="button" class="nomal_btn">장바구니</button>
+                        <button type="button" class="nomal_btn">구매하기</button>
                     </div>
                 </div>
             </div>
@@ -104,27 +81,27 @@
                         <div class="contents">
                             <img src="img/shop_subicon(1).png" alt="">
                             <div class="effect_text">
-                                <p>병풀 추출물 병풀 원액</p>
-                                <span>허브의 일종인 병풀이<br>
-                                    피부 진정과 수분 관리에 도움을 줍니다.</span>
+                                <p>피부 진정 도움</p>
+                                <span>허브의 일종인 병풀의 성분이<br>
+                                    <strong>피부진정</strong>에 도움을 줍니다.</span>
                             </div>
                         </div>
 
                         <div class="contents">
                             <img src="img/shop_subicon(2).png" alt="">
                             <div class="effect_text">
-                                <p>병풀 추출물 병풀 원액</p>
-                                <span>허브의 일종인 병풀이<br>
-                                    피부 진정과 수분 관리에 도움을 줍니다.</span>
+                                <p>피부 수분 관리</p>
+                                <span>수분 및 영양을 공급해<br>
+                                    <strong>수분관리</strong>에 도움을 줍니다.</span>
                             </div>
                         </div>
 
                         <div class="contents">
                             <img src="img/shop_subicon(3).png" alt="">
                             <div class="effect_text">
-                                <p>병풀 추출물 병풀 원액</p>
-                                <span>허브의 일종인 병풀이<br>
-                                    피부 진정과 수분 관리에 도움을 줍니다.</span>
+                                <p>피부 톤 개선</p>
+                                <span>피분의 <strong>톤 개선</strong>하는데<br>
+                                    도움을 줍니다.</span>
                             </div>
                         </div>
                     </div>
@@ -189,87 +166,15 @@
                             </svg>
                             <input type="text" class="input" placeholder="리뷰를 작성해 주세요.">
                             <div class="star">
-                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path  data-name="패스 22" d="M24,0H0V24H24Z" fill="none"/>
-                                    <path " data-name="패스 23" d="M12,7.13l-.97,2.29-.47,1.11-1.2.1-2.47.21,1.88,1.63.91.79-.27,1.18-.56,2.41,2.12-1.28L12,14.93l1.03.62,2.12,1.28-.56-2.41-.27-1.18.91-.79,1.88-1.63-2.47-.21-1.2-.1L12.97,9.4,12,7.13M12,2l2.81,6.63L22,9.24l-5.46,4.73L18.18,21,12,17.27,5.82,21l1.64-7.03L2,9.24l7.19-.61Z" fill="#6a6a6a"/>
-                                </svg>
-                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path  data-name="패스 22" d="M24,0H0V24H24Z" fill="none"/>
-                                    <path  data-name="패스 23" d="M12,7.13l-.97,2.29-.47,1.11-1.2.1-2.47.21,1.88,1.63.91.79-.27,1.18-.56,2.41,2.12-1.28L12,14.93l1.03.62,2.12,1.28-.56-2.41-.27-1.18.91-.79,1.88-1.63-2.47-.21-1.2-.1L12.97,9.4,12,7.13M12,2l2.81,6.63L22,9.24l-5.46,4.73L18.18,21,12,17.27,5.82,21l1.64-7.03L2,9.24l7.19-.61Z" fill="#6a6a6a"/>
-                                </svg>
-                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path  data-name="패스 22" d="M24,0H0V24H24Z" fill="none"/>
-                                    <path  data-name="패스 23" d="M12,7.13l-.97,2.29-.47,1.11-1.2.1-2.47.21,1.88,1.63.91.79-.27,1.18-.56,2.41,2.12-1.28L12,14.93l1.03.62,2.12,1.28-.56-2.41-.27-1.18.91-.79,1.88-1.63-2.47-.21-1.2-.1L12.97,9.4,12,7.13M12,2l2.81,6.63L22,9.24l-5.46,4.73L18.18,21,12,17.27,5.82,21l1.64-7.03L2,9.24l7.19-.61Z" fill="#6a6a6a"/>
-                                </svg>
-                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path  data-name="패스 22" d="M24,0H0V24H24Z" fill="none"/>
-                                    <path  data-name="패스 23" d="M12,7.13l-.97,2.29-.47,1.11-1.2.1-2.47.21,1.88,1.63.91.79-.27,1.18-.56,2.41,2.12-1.28L12,14.93l1.03.62,2.12,1.28-.56-2.41-.27-1.18.91-.79,1.88-1.63-2.47-.21-1.2-.1L12.97,9.4,12,7.13M12,2l2.81,6.63L22,9.24l-5.46,4.73L18.18,21,12,17.27,5.82,21l1.64-7.03L2,9.24l7.19-.61Z" fill="#6a6a6a"/>
-                                </svg>
-                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path  data-name="패스 22" d="M24,0H0V24H24Z" fill="none"/>
-                                    <path  data-name="패스 23" d="M12,7.13l-.97,2.29-.47,1.11-1.2.1-2.47.21,1.88,1.63.91.79-.27,1.18-.56,2.41,2.12-1.28L12,14.93l1.03.62,2.12,1.28-.56-2.41-.27-1.18.91-.79,1.88-1.63-2.47-.21-1.2-.1L12.97,9.4,12,7.13M12,2l2.81,6.63L22,9.24l-5.46,4.73L18.18,21,12,17.27,5.82,21l1.64-7.03L2,9.24l7.19-.61Z" fill="#6a6a6a"/>
-                                </svg>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
                             </div>
                         </div>
 
-                        <div class="content">
-                            <div class="text">
-                                <p class="id">pool1129</p>
-                                <span>여드름으로 고생하는 고등학생 아이 사줬는데 너무 좋아하네요!
-                                    순한성분이라 마음도 놓이고 재구매 의사 완전 있습니다~</span>
-                            </div>
-                            <div class="pic">
-                                <img src="img/reviewthumnail.png" alt="">
-                                <figure>
-                                    <img src="img/reviewthumnail.png" alt="">
-                                    <div class="plus">
-                                        <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                            <path  data-name="패스 10" d="M0,0H40V40H0Z" fill="none"/>
-                                            <path  data-name="패스 11" d="M21.048,10.658H17.585v6.927H10.658v3.463h6.927v6.927h3.463V21.048h6.927V17.585H21.048ZM19.317,2A17.317,17.317,0,1,0,36.633,19.317,17.323,17.323,0,0,0,19.317,2Zm0,31.17A13.853,13.853,0,1,1,33.17,19.317,13.872,13.872,0,0,1,19.317,33.17Z" transform="translate(0.683 0.683)" fill="#6A6A6A"/>
-                                        </svg>
-                                    </div>  
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <div class="text">
-                                <p class="id">pool1129</p>
-                                <span>여드름으로 고생하는 고등학생 아이 사줬는데 너무 좋아하네요!
-                                    순한성분이라 마음도 놓이고 재구매 의사 완전 있습니다~</span>
-                            </div>
-                            <div class="pic">
-                                <img src="img/reviewthumnail.png" alt="">
-                                <figure>
-                                    <img src="img/reviewthumnail.png" alt="">
-                                    <div class="plus">
-                                        <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                            <path  data-name="패스 10" d="M0,0H40V40H0Z" fill="none"/>
-                                            <path  data-name="패스 11" d="M21.048,10.658H17.585v6.927H10.658v3.463h6.927v6.927h3.463V21.048h6.927V17.585H21.048ZM19.317,2A17.317,17.317,0,1,0,36.633,19.317,17.323,17.323,0,0,0,19.317,2Zm0,31.17A13.853,13.853,0,1,1,33.17,19.317,13.872,13.872,0,0,1,19.317,33.17Z" transform="translate(0.683 0.683)" fill="#6A6A6A"/>
-                                        </svg>
-                                    </div>  
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <div class="text">
-                                <p class="id">pool1129</p>
-                                <span>여드름으로 고생하는 고등학생 아이 사줬는데 너무 좋아하네요!
-                                    순한성분이라 마음도 놓이고 재구매 의사 완전 있습니다~</span>
-                            </div>
-                            <div class="pic">
-                                <img src="img/reviewthumnail.png" alt="">
-                                <figure>
-                                    <img src="img/reviewthumnail.png" alt="">
-                                    <div class="plus">
-                                        <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                            <path  data-name="패스 10" d="M0,0H40V40H0Z" fill="none"/>
-                                            <path  data-name="패스 11" d="M21.048,10.658H17.585v6.927H10.658v3.463h6.927v6.927h3.463V21.048h6.927V17.585H21.048ZM19.317,2A17.317,17.317,0,1,0,36.633,19.317,17.323,17.323,0,0,0,19.317,2Zm0,31.17A13.853,13.853,0,1,1,33.17,19.317,13.872,13.872,0,0,1,19.317,33.17Z" transform="translate(0.683 0.683)" fill="#6A6A6A"/>
-                                        </svg>
-                                    </div>  
-                                </figure>
-                            </div>
+                        <div class="list">
                         </div>
 
                         <button type="button" class="next">
@@ -376,24 +281,15 @@
     </main>
 
     <footer>
-        <div class="footer">
-            <div class="logo">
-                <img src="img/logo.png" alt="메인로고">
-            </div>
-            <div class="footer_text">
-                <span>대표자 최유미  |  경기도 김포시 통진읍 동을산로 177번지 77 (우 : 10015)<br>
-                통신판매업 신고번호 제 2018-경기김포-0077  |  사업자 등록 번호 472-23-000048 사업자정보확인<br>
-                문의전화 070-7517-9980  |  상담가능시간 10:00~19:00(Break 13:00~14:00)  |  문의메일 : nubino@naver.com</span>
-            </div>
-            <div class="sns">
-                  <img src="img/sns_facebook.png" alt="페이스북">
-                  <img src="img/sns_insta.png" alt="인스타그램">
-                  <img src="img/sns_twitter.png" alt="트위터">
-                  <img src="img/sns_youtube.png" alt="유투브">
-            </div>
-        </div>
-        <span>One thing 2018  |  all right reserved.</span>
     </footer>
     <!-- footer영역 -->
+
+    <!-- script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>

@@ -1,37 +1,57 @@
 
 /* main영역 */
-.main{background-color: #F8F3EF; width: 100%;}
-.main_section{padding-top: 205px; padding-bottom: 300px;}
+.main{background-color: #F8F3EF; width: 100%; padding: 205px 0;}
+.main_section{padding: 0 5%; display: flex; align-items: center;}
 .main_section::after{content: ''; display: block; clear: both;}
-.main_section .main_text{display: flex; float:left; justify-content: center; flex-direction: column; margin-top: 75px;}
-.main_section .main_text h3{}
+.main_section .main_text{display: flex; float:left; justify-content: center; flex-direction: column; width: 50%; padding-right: 5%;}
 .main_section .main_text span{font-size: 2rem; margin-top: 40px;}
-.main_section .main_text span:nth-of-type(2){display: none;}
-.main_section img{float: right;}
+.main_section figure{float: right; width: 50%;}
+.main_section img{width: 100%;}
 
 /* insta영역 */
-.insta{width: 100%; background-color: #fff; text-align: center;}
-.insta_section {padding-top: 130px; padding-bottom: 105px; display: flex; justify-content: center; flex-direction: column;}
+.insta{width: 100%; background-color: #fff; text-align: center; padding:100px 0;}
+.insta_section {padding:0 5%; display: flex; justify-content: center; flex-direction: column;}
 .insta_section span{font-size: 2rem; margin-top: 40px;}
 .insta_section .insta_img{margin-top: 70px;}
 
-
-/* :hover */
 .insta_section .insta_img .img > div:hover{background:rgba(0, 0, 0, 0.3);}
 
-@media (max-width: 767px) {
 
+/* 미디어 쿼리 */
+@media (max-width: 1290px) {}
+
+@media (max-width: 1024px) {
     /* main영역 */
-    .main_section{position: relative; padding-top: 200px; padding-bottom: 40px;}
-    .main_section img{width: 100%; position: absolute; top: 30px; left: 0;}
-    .main_section .main_text span:nth-of-type(1){display: none;}
-    .main_section .main_text span:nth-of-type(2){font-size: 1rem; line-height: 2rem; display: inline-block; text-align: justify; margin-top: 20px;}
+    .main_section .main_text{width: 60%;}
+}
+
+@media (max-width: 960px) {
+    /* main영역 */
+    .main_section{padding: 5% 5% 0; flex-direction: column-reverse;}
+    .main_section figure{width: 100%;}
+    .main_section .main_text{width: 100%; padding: 5% 0 0;}
+    .main_section .main_text span{font-size: 1.7rem;}
 
     /* insta영역 */
-    .insta_section{padding-top: 45px; padding-bottom: 0;}
-    .insta_section span{font-size: 1rem; line-height: 2rem; margin-top: 20px;}
-    .insta_section .insta_img{padding: 40px 0px; margin-top: 0; }
-    .insta_section .insta_img .img > div{width: 100px; height:100px; background-color: #F8F3EF; margin-bottom: 10px;}
-    .insta_section .insta_img .img > div:nth-child(4n){display: none;}
-    .prev, .next{display: none;}
+    .insta_section span{font-size: 1.7rem;}
+    .insta_section .insta_img{margin-top: 40px;}
+}
+
+@media (max-width: 767px) {
+    /* main영역 */
+    .main_section{padding: 0 5%;}
+    .main_section .main_text span{font-size: 1.5rem; margin-top: 15px;}
+
+    /* insta영역 */
+    .insta_section span{font-size: 1.5rem; margin-top: 15px;}
+    .insta_section .insta_img{margin-top: 20px;}
+}
+
+@media (max-width: 480px) {
+    /* main영역 */
+    .main_section .main_text span{font-size: 1rem; line-height: 2rem; margin-top: 10px;}
+
+    /* insta영역 */
+    .insta_section span{font-size: 1rem;}
+    .insta_section .insta_img{margin-top: 15px;}
 }
