@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 /* reset영역 */
+
 html{font-size: 10px;}
 *, img{padding: 0; margin: 0; box-sizing: border-box;}
 img{vertical-align: top;}
@@ -15,6 +16,23 @@ p, button, a, h1, h2, h3, h4, h5, h6, tr, span, li, div, input, textarea, select
 h3{font-size: 4rem; color: #805E40; font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: bold;}
 img{vertical-align: top;}
 
+/* 마우스 효과 */
+.cursor {position: absolute; width: 10px; height: 10px; background: #ff9a41; border-radius: 50%; z-index: 1000; user-select: none; pointer-events: none; transform: scale(1); transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;}
+.cursor.active {opacity: .5; transform: scale(0);}
+.cursor-follower {z-index:999; position: absolute; width: 30px; height: 30px; background: rgba(128,94,64,0.3); border-radius: 50%; user-select: none; pointer-events: none; transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out;}
+.cursor-follower.active {opacity: .7; transform: scale(4);}
+
+/* 슬라이드 검색 */
+.slide_search{box-shadow: 0 1px 1px rgb(0 0 0 / 15%), 0 2px 2px rgb(0 0 0 / 15%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 15%); padding: 0 5%; width: 100%; height: 320px; background-color: #fff; position: absolute; top: 100%; left: 0; z-index: 999; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; transition: all 0.5s ease-in-out; transform: translateY(-200%); visibility: hidden;}
+.slide_search .text{position:relative; margin: 0 auto; width: 1200px; top: 45%; transform: translateY(-50%);}
+.slide_search .text .closepopup{position: absolute; right: 0; top: 0; transform: rotate(45deg);}
+.slide_search .text h2{margin-bottom : 35px; font-size: 4rem; color: #805E40; font-weight: bold; line-height: 6rem;}
+.slide_search .text .input{display: flex; justify-content: space-between;}
+.slide_search .text .input .search{width: 50px; height: 50px;}
+.slide_search .text .input input{width: 100%; height: 50px; font-size: 3rem; border: none; outline: none; border-bottom: 1px solid #000;}
+.slide_search.active{transform: translateY(0); visibility: visible;}
+header.active{background-color: #fff;}
+
 /* 버튼 */
 button{text-align:center; font-size: 2rem; border-radius: 15px; letter-spacing: 1rem; text-transform: uppercase; outline:none; font-weight: bold; cursor: pointer; border-radius: 40px; outline: none; border: none;}
 .nomal_btn{outline:none; border-radius: 40px; background-color: #805E40; color: #fff; text-transform: uppercase; display: block; border: none; cursor: pointer; width: 275px; height: 80px;}
@@ -26,11 +44,11 @@ button{text-align:center; font-size: 2rem; border-radius: 15px; letter-spacing: 
 
 /* 검색버튼 */
 .search{display: flex; justify-content: center;}
-.search input{border: 1px solid #6A6A6A; padding-left: 30px; padding-right: 10px; outline:none; width: 450px; height: 50px; border-top-left-radius: 40px; border-bottom-left-radius: 40px; font-size: 2rem;}
-.search > .search_btn{padding:0; margin:0; background-color: #805E40; color: #fff; width: 140px; height: 50px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+.search  input{border: 1px solid #6A6A6A; padding-left: 30px; padding-right: 10px; outline:none; width: 450px; height: 50px; border-top-left-radius: 40px; border-bottom-left-radius: 40px; font-size: 2rem;}
+.search  .search_btn{padding:0; margin:0; background-color: #805E40; color: #fff; width: 140px; height: 50px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
 
 /* header영역 */
-header{width: 100%; background-color: #F8F3EF;}
+header{width: 100%; background-color: #F8F3EF; position: relative; transition: all 0.5s ease-in-out;}
 .header{padding: 30px 5%; display: flex; justify-content: space-between; align-items: flex-start;}
 .header .logo img{width: 100%;} 
 .header .menu{margin-left: auto; margin-right: 30px;}
@@ -38,8 +56,8 @@ header{width: 100%; background-color: #F8F3EF;}
 .header .menu p:last-child{margin-right: 0;}
 
 .header .menu a.active{font-size: 1.7rem; color: #805E40; font-weight: bold;}
-.header input{border:1px solid #805E40; transition: 0.5s ease-in-out; display: none; height: 30px; width : 200px; padding: 5px; outline: none; font-size: 1.5rem; color:#805E40; margin-right: 10px; border-radius: 10px;}
-.header input.active{display: block;}
+.header > input{border:1px solid #805E40; transition: 0.5s ease-in-out; display: none; height: 30px; width : 200px; padding: 5px; outline: none; font-size: 1.5rem; color:#805E40; margin-right: 10px; border-radius: 10px;}
+.header > input.active{display: block;}
 .header .icon a img{margin-right: 30px;}
 
 .header .icon .shopping{margin-right: 0; position: relative; width: 32px; height: 32px; transition: fill 0.5s ease-in-out;}
@@ -53,21 +71,39 @@ header{width: 100%; background-color: #F8F3EF;}
 
 .header .icon .search{display: inline-block;}
 
-/* .nav_icon */
-.nav_icon, .nav_icon div {transition: all .4s; box-sizing: border-box;}
-.nav_icon {width: 25px; height: 20px; z-index: 3; display: flex; flex-direction: column; justify-content: space-between; display: none;}
-.nav_icon div {width: 100%; height: 4px; background-color: #6A6A6A; border-radius: 4px;}
-.nav_icon div:nth-of-type(1) {top: 0; margin-top: 1%;}
-.nav_icon div:nth-of-type(2) {top: 15px;}
-.nav_icon div:nth-of-type(3) {top: 30px;}
+/* mobile hamberger menu */
+.ham {z-index:999; position: absolute; top:50%; right: 5%; transform: translateY(-50%); width: 40px; height: 40px; cursor: pointer; display: none; flex-direction: column; justify-content: center;}
+.ham span {display: block; background: #6A6A6A; width: 40px; height: 4px; border-radius: 3px; transition: margin 0.25s  0.25s, 0.25s transform;}
+.ham .bar1 {margin-bottom: 8px;}
+.ham .bar3 {margin-top: 8px;}
+
+.ham.active span {transition: 0.25s margin, 0.25s transform 0.25s;}
+.ham.active .bar1 {margin-top: 8px; margin-bottom: -4px; transform: rotate(45deg);}
+.ham.active .bar2 {transform: rotate(45deg);}
+.ham.active .bar3 {margin-top: -4px; transform: rotate(135deg);}
 
 /* nav_menu */
-.nav_menu{z-index:2; position: absolute; top: 0; right: 0; width: 50%; height: 100vh; background-color: #F8F3EF; padding: 15% 10% 10%; transform: translateX(100%); display: none;}
-.nav_menu p{font-size: 1.7rem; margin: 5%;}
+.nav_menu{z-index:2; position: absolute; top: 0; right: 0; width: 50%; height: 100vh; background-color: #F8F3EF; transform:translateX(100%); transform-origin: 0px 0px; transition: all 0.3s; display: none;}
+.nav_menu.on{display:block; transform: translateX(0); visibility: visible; box-shadow: 0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%), 0 4px 4px rgb(0 0 0 / 11%), 0 6px 8px rgb(0 0 0 / 11%), 0 8px 16px rgb(0 0 0 / 11%);}
+
+.nav_menu ul{margin-top: 30%;}
+.nav_menu ul li{font-size: 2rem; padding: 5% 10%;}
+
+.nav_menu ul:nth-of-type(2){margin-top: 100%; font-family: 'Montserrat', sans-serif; text-transform: uppercase;}
+.nav_menu ul:nth-of-type(2) li{font-size: 1.7rem; padding: 3% 10%;}
+
+.nav_menu ul:nth-of-type(1) li:hover {background-color: rgba(128, 94, 64, 0.65);}
+.nav_menu ul:nth-of-type(1) li:hover {color: #fff;}
+
+.nav_menu ul:nth-of-type(2) li:hover a{color: #805E40; font-weight: bold;}
+
+.nav_menu .mo_search{display: flex; justify-content: space-between; align-items: center; padding: 5%; margin-top: 40%;}
+.nav_menu .mo_search > input{height: 40px; width : 230px; padding: 5px; outline: none; font-size: 1.5rem; color:#805E40; border-radius: 10px; border: none;}
+.nav_menu .mo_search > .search{margin-left: 10px;}
 
 /* hover영역 */
 .header .menu a::after{content: ''; display: block; padding-top: 5px; transform: scaleX(0); transition: transform 250ms ease-in-out; transform-origin: 0% 50%; border-bottom: 3px solid #805E40;}
-.header .menu a:hover:after {transform:scaleX(1);}
+.header .menu a:hover:after {transform:scaleX(0);}
 
 /* footer영역 */
 footer{width: 100%; background-color: rgba(128, 94, 64, 0.3); padding:30px 5%; text-align: center;}
@@ -76,9 +112,10 @@ footer span{font-size: 1.7rem;}
 .footer .logo img{width: 100%;}
 .footer{display: flex; justify-content: space-between; align-items: flex-start;}
 .footer_text{text-align: center; width: 55%; margin: 10px 0 20px;}
-.sns{display: flex;}
-.sns img{margin-right: 10px; width: 30px; height: 30px;}
-.sns img:last-child{margin-right: 0px;}
+
+.sns{display: flex; width: 200px; justify-content: space-between; align-items: center;}
+.sns img{width: 40px; height: 40px; filter: grayscale(90%);}
+.sns img:hover {filter: none;}
 
 
 /* 미디어 쿼리 */
@@ -86,6 +123,7 @@ footer span{font-size: 1.7rem;}
 @media (max-width: 1290px){
     .container{width: 100%;}
     .look{width: 160px; height: 50px;}
+    .slide_search .text{width: 100%;}
 }
 
 
@@ -105,6 +143,8 @@ footer span{font-size: 1.7rem;}
 
     .header .menu{z-index:999; left:0; padding: 0 5%; width: 100%; position: absolute; top: 105px; display: flex; justify-content: space-between; align-items: center;}
     .header .menu p{margin-right: 0;}
+
+    .header .icon{margin-left: auto;}
 }
 
 
@@ -117,7 +157,11 @@ footer span{font-size: 1.7rem;}
     .header{align-items: center; padding: 15px 5%;}
     .header .icon{display: none;}
     .header .menu{display: none;}
-    .nav_icon{display: flex;}
+
+    .ham{display: flex;}
+
+    .nav_menu ul li{font-size: 1.5rem;}
+    .nav_menu ul:nth-of-type(2) li{font-size: 1.25rem;}
 }
 
 
@@ -134,13 +178,25 @@ footer span{font-size: 1.7rem;}
     .nav_menu p{font-size: 1.5rem;}
     .nav_icon{width: 15px; height: 15px;}
     .nav_icon div {height: 3px;}
-    
+
+    .ham{width: 30px; height: 30px;}
+    .ham span{width: 30px;}
+    .ham .bar1{margin-bottom: 5px;}
+    .ham .bar3{margin-top: 5px;}
+
+    .ham.active .bar1 {margin-top: 0px; margin-bottom: -2.5px;}
+    .ham.active .bar2 {display: none;}
+    .ham.active .bar3 {margin-top: -2.5px;}
+
+    .nav_menu .mo_search > input{width: 100%;}
+    .mo_search a .search{display: none;}
 
     footer{padding: 15px 5%;}
     footer span{font-size: 1rem;}
     .footer{margin: 0 0 10px;}
     .footer .logo img{width: 80%;}
     .footer_text span{font-size: 1rem; line-height: 2rem;}
+    .sns img{width: 30px; height: 30px;}
 }
 
 

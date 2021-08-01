@@ -27,7 +27,7 @@ const mainList = [
 
 const customQna = [
     {
-        q : '스트레스, 음주, 음식 섭취에 의해 얼굴과 목이 붉어지나요?',
+        q : '스트레스, 음주, 음식 섭취에 의해 <br> 얼굴과 목이 붉어지나요?',
         a : [
             {answer : '전혀 그런적이 없다', type : ['0','1']},
             {answer : '때때로 그렇다', type : ['2','3']},
@@ -37,7 +37,7 @@ const customQna = [
     },
 
     {
-        q : '화장품을 사용한 뒤 따끔거리는 증상을 경험한 적이 있나요?',
+        q : '화장품을 사용한 뒤 따끔거리는 증상을 <br> 경험한 적이 있나요?',
         a : [
             {answer : '거의 없다', type : ['0','3']},
             {answer : '가끔 있다', type : ['1','2']},
@@ -47,7 +47,7 @@ const customQna = [
     },
 
     {
-        q : '며칠동안 계속해서 햇빛에 노출된다면 내 피부는?',
+        q : '며칠동안 계속해서 햇빛에 노출된다면 <br> 내 피부는?',
         a : [
             {answer : '물집이 생겼으나 피부색은 변하지 않는다', type : ['1','2']},
             {answer : '피부색이 약간 짙어졌다', type : ['2','3']},
@@ -57,7 +57,7 @@ const customQna = [
     },
 
     {
-        q : '여드름이나 염증이 있던 자리에 색소가 어둡게 남는 편인가요?',
+        q : '여드름이 있던 자리에 <br> 색소가 어둡게 남는 편인가요?',
         a : [
             {answer : '전혀 생기지 않는다', type : ['1','3']},
             {answer : '때때로 생긴다', type : ['0']},
@@ -77,7 +77,7 @@ const customQna = [
     },
 
     {
-        q : '나는 얼마나 나의 들어 보인다고 생각하나요?',
+        q : '나는 얼마나 <br> 나이 들어 보인다고 생각하나요?',
         a : [
             {answer : '나이보다 5-10년 더 젊어보인다', type : ['1','0']},
             {answer : '나이대로 보인다', type : ['2','3']},
@@ -87,7 +87,7 @@ const customQna = [
     },
 
     {
-        q : '얼굴의 T존(이마와 코)에 기름기가 있나요?',
+        q : '얼굴의 T존(이마와 코)에 <br> 기름기가 있나요?',
         a : [
             {answer : '전혀 없다', type : ['1']},
             {answer : '때때로 있다', type : ['2']},
@@ -97,7 +97,7 @@ const customQna = [
     },
 
     {
-        q : '보습제를 사용하지 않아도 얼굴 피부는 촉촉한가요?',
+        q : '보습제를 사용하지 않아도 <br> 얼굴 피부는 촉촉한가요?',
         a : [
             {answer : '항상 그렇다', type : ['0','2']},
             {answer : '때때로 그렇다', type : ['2']},
@@ -111,7 +111,7 @@ const customQna = [
 const resultList = [
     {
         a : [
-            {eng : 'GALACTOMYCES FERMENT FILTRATE', tit : '갈락토미세스 발효여과물', capa : '300ml', price : '18,000원' , img:'img/result/갈락토미세스.png'},
+            {eng : 'Galactomyces Ferment', tit : '갈락토미세스 발효여과물', capa : '300ml', price : '18,000원' , img:'img/result/갈락토미세스.png'},
             {eng : 'Moisture Plus Cream', tit : '모이스처 플러스 크림', capa : '50ml', price : '15,800원' , img:'img/result/모이스처플러스크림.png'},
             {eng : 'organic lip essence', tit : '유기능 립에센스', capa : '13g', price : '4,900원' , img:'img/result/유기농오일립에센스.png'}
         ]
@@ -119,15 +119,15 @@ const resultList = [
 
     {
         a : [
-            {eng : 'HOUTTUYNIA CORDATA EXTRACT', tit : '어성초 추출물 어성초 원액', capa : '150ml', price : '6,600원', img:'img/result/어성초추출물.png'},
+            {eng : 'Houttuynia Cordata', tit : '어성초 추출물 원액', capa : '150ml', price : '6,600원', img:'img/result/어성초추출물.png'},
             {eng : 'Idebenone ampoule', tit : '이데베논 앰플 원액', capa : '30ml', price : '13,800원', img:'img/result/이데베논앰플.png'},
-            {eng : 'Modeling Pack', tit : '(탄력)콜라겐 모델링팩', capa : '30g x 7개입', price : '12,800원', img:'img/result/콜라겐모델링팩.png'}
+            {eng : 'Modeling Pack', tit : '콜라겐 모델링팩', capa : '30g x 7개입', price : '12,800원', img:'img/result/콜라겐모델링팩.png'}
         ]
     },
 
     {
         a : [
-            {eng : 'ARTEMISIA CAPILLARIS EXTRACT', tit : '인진쑥 추출물 인진쑥 원액', capa : '150ml', price : '6,600원', img:'img/result/인진쑥추출물.png'},
+            {eng : 'Artemisia Capillaris', tit : '인진쑥 추출물 원액', capa : '150ml', price : '6,600원', img:'img/result/인진쑥추출물.png'},
             {eng : 'Tea Tree Soap', tit : '어성초 티트리 비누', capa : '100g', price : '10,800원', img:'img/result/어성초비누.png'},
             {eng : 'soothing cream', tit : '병풀 수딩 크림', capa : '100ml', price : '11,900원', img:'img/result/병풀수딩크림.png'}
         ]
@@ -135,9 +135,9 @@ const resultList = [
 
     {
         a : [
-            {eng : 'CENTELLA ASIATICA EXTRACT', tit : '병풀 추출물 병풀 원액', capa : '150ml', price : '6,600원', img:'img/result/병풀추출물.png'},
-            {eng : 'organic jojoba oil', tit : '유기농 호호바 오일', capa : '30ml', price : '5,880원', img:'img/result/호호바오일.png'},
-            {eng : 'Modeling Pack', tit : '(진정)어성초 모델링팩', capa : '30g x 7개입', price : '12,800원', img:'img/result/어성초모델링팩.png'}
+            {eng : 'Centella Asiatica', tit : '병풀 추출물 원액', capa : '150ml', price : '6,600원', img:'img/result/병풀추출물.png'},
+            {eng : 'Organic jojoba oil', tit : '유기농 호호바 오일', capa : '30ml', price : '5,880원', img:'img/result/호호바오일.png'},
+            {eng : 'Modeling Pack', tit : '어성초 모델링팩', capa : '30g x 7개입', price : '12,800원', img:'img/result/어성초모델링팩.png'}
         ]
     }
 ]
@@ -191,4 +191,80 @@ const review = [
         img1 : 'img/shop_sub/review (13).jpeg',
         img2 : 'img/shop_sub/review (14).jpeg'
     },
+]
+
+const bestSeller = [
+    {
+        img:'img/best/best+어성초비누.png',
+        tit : '어성초 티트리 천연비누',
+        price : '10,800원'
+    },
+
+    {
+        img:'img/best/best+모이스처크림.png',
+        tit : '모이스처 플러스 크림',
+        price : '15,800원'
+    },
+
+    {
+        img:'img/best/best+어성초.png',
+        tit : '어성초 추출물 원액',
+        price : '6,600원'
+    },
+
+    {
+        img:'img/best/best+이데베논앰플.png',
+        tit : '이데베논 앰플 원액',
+        price : '13,800원'
+    },
+
+    {
+        img:'img/best/best+수딩크림.png',
+        tit : '병풀 수딩 크림',
+        price : '11,900원'
+    },
+
+    {
+        img:'img/best/best+병풀.png',
+        tit : '병풀 추출물 원액',
+        price : '6,600원'
+    },
+
+    {
+        img:'img/best/best+립에센스.png',
+        tit : '유기농 오일 립에센스',
+        price : '4,900원'
+    },
+
+    {
+        img:'img/best/best+인진쑥.png',
+        tit : '인진쑥 추출물 원액',
+        price : '6,600원'
+    }
+]
+
+const withItem = [
+    {
+        img:'img/best/best+수딩크림.png',
+        tit:'병풀 수딩 크림',
+        price:'11,900원'
+    },
+
+    {
+        img:'img/best/best+이데베논앰플.png',
+        tit:'이데베논 앰플 원액',
+        price:'13,800원'
+    },
+
+    {
+        img:'img/best/best+어성초.png',
+        tit:'어성초 추출물 원액',
+        price:'6,600원'
+    },
+
+    {
+        img:'img/best/best+어성초비누.png',
+        tit:'어성초 티트리 천연비누',
+        price:'10,800원'
+    }
 ]

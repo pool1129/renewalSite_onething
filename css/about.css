@@ -1,6 +1,6 @@
 
 /* main영역 */
-.main{background-color: #F8F3EF; width: 100%; padding: 205px 0;}
+.main{background-color: #F8F3EF; width: 100%; padding: 100px 0;}
 .main_section{padding: 0 5%; display: flex; align-items: center;}
 .main_section::after{content: ''; display: block; clear: both;}
 .main_section .main_text{display: flex; float:left; justify-content: center; flex-direction: column; width: 50%; padding-right: 5%;}

@@ -131,7 +131,7 @@
 /*인디게이터 ul li button*/
 .slick-dots{position: absolute; left: 50%; bottom: 0; z-index: 2; list-style: none; margin: 0; padding: 0; transform: translateX(-50%); display: none;}
 .slick-dots li{display: inline-block;}
-.slick-dots li button{width: 10px; height: 10px; background-color: #6A6A6A; font-size: 0; padding: 0; margin: 0 10px; border: 0;}
+.slick-dots li button{width: 10px; height: 10px; background-color: #805E40; font-size: 0; padding: 0; margin: 0 10px; border: 0;}
 
 .slick-dots li.slick-active button{background-color: #ff9a41;}
 

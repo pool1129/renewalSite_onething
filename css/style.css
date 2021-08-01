@@ -1,23 +1,25 @@
 @import url(common.css);
 
+.ele {transition: transform 0.7s, opacity 1s;}
+
 /* main영역 */
-.main{background-color: #F8F3EF; width: 100%; padding: 90px 0; background-image: url(../img/main모양.png); background-repeat: no-repeat; background-position: 80% 15%;}
-.main_section{display:flex; align-items: flex-end; width : 1200px; background-image: url(../img/headerbiglogoimg.png); background-repeat: no-repeat; background-position: 50% 50%; position: relative;}
+.main{background-color: #F8F3EF; width: 100%; padding: 90px 0; background-image: url(../img/main모양.png); background-repeat: no-repeat; background-position: 80% 50%;}
+.main_section{display:flex; align-items: flex-end; background-image: url(../img/headerbiglogoimg.png); background-repeat: no-repeat; background-position: 75% 50%; position: relative;}
 .main_section::after{content: ''; display: block; clear: both;}
 .main_section .text{float: left; width: 60%; margin: 0 0 10%; position: absolute; top: 50%; transform: translateY(-50%);}
-.main_section .text span{font-size: 2.5rem; font-family: 'Montserrat', sans-serif; display: block;}
-.main_section .text h2{font-size: 5rem; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: 20px; line-height: 50px;}
+.main_section .text span{font-size: 2.5rem; display: block;}
+.main_section .text h2{font-size: 5rem; font-weight: bold; margin-top: 20px; line-height: 50px;}
 .main_section .text p{font-size: 2rem; font-weight: bold; margin-top: 35px;}
 .main_section .text button{margin-top: 65px;}
 .main_section .text .slide_bar{margin-top: 60.5px; display: block; width: 100%; height: 5px; background: rgba(128, 94, 64, 0.15);}
 .main_section .text .slide_bar .status{width: 0%; height: 5px; background: #805E40;}
 
-.main_section .main_img {float: right; width: 40%; height:795px; background-size: cover; background-position: 50% 50%;}
+.main_section .main_img {float: right; width: 40%; height:795px; background-size: cover; background-position: 25% 50%;}
 .main_section .main_img .showing{z-index: 1; opacity: 1;}
 
 /* about영역 */
 .about{width: 100%; background-color: #FBF6F2; padding: 145px 0;}
-.about h2{line-height : 15rem; text-transform : uppercase; font-size: 15rem; font-family: 'Montserrat', sans-serif; font-weight: 700; color: #805E40; opacity: 30%; display: flex; justify-content: center;}
+.about h2{line-height : 15rem; text-transform : uppercase; font-size: 15rem; font-family: 'Montserrat', sans-serif; font-weight: 700; color: rgba(128, 94, 64, 0.3); display: flex; justify-content: center;}
 .about_section{padding: 0 5%; width: 100%;}
 .about_section::after{content: ''; display: block; clear: both;}
 .about_section > div{display: flex; align-items: center; padding: 10% 0 12%;}
@@ -33,10 +35,33 @@
 .best_section{width: 100%; padding: 0 5%;}
 .bestTop_section{display: flex; justify-content: space-between; align-items: center;}
 .best_section .list{padding:10% 0; width: 100%; display: flex; overflow: hidden;}
-.best_section .list .contents{flex-shrink:0; width: 23%; padding: 20px; border-radius: 20px; background-color: #F6EDE6; box-shadow: 2px 2px 5px rgba(0,0,0,0.10); margin: 10px; text-align: center; height: auto;}
-.best_section .list .contents figure{position: relative;}
-.best_section .list .contents figure img{width: 100%;}
-.best_section .list .contents figure .heart{position: absolute; top: 0; left: 0;}
+.best_section .list .contents{display:flex; flex-direction: column; align-items: center; position: relative; flex-shrink:0; width: 23%; padding: 20px; border-radius: 20px; background-color: #F6EDE6; box-shadow: 2px 2px 5px rgba(0,0,0,0.10); margin: 10px; text-align: center; height: auto;}
+.best_section .list .contents figure .heart{opacity : 1; transition: 0.5s; position: absolute; top: 30px; left: 30px;}
+.heart.active ,  .heart.active::before, .heart.active::after  {background-color: #6a6a6a;}
+
+.heart {
+    width: 25px;
+    height:25px;
+    background: #ea2027;
+    transform: rotate(45deg);
+  }
+.heart::before,.heart::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background: #ea2027;
+  }
+.heart::before {
+    left: -50%;
+  }
+.heart::after {
+    top: -50%;
+    left: 0;
+  }
+
+/* .best_section .list .contents figure img:nth-of-type(2){width: 100%;} */
 .best_section .list .contents h4{font-size: 2rem; font-weight: bold;}
 .best_section .list .contents p{font-size: 2rem; margin-top: 5px;}
 
@@ -69,8 +94,9 @@
 
 @media (max-width:1290px) {
     /* main영역 */
-    .main{padding: 0 0 40px;}
-    .main_section{width: 100%; padding: 0 5%;}   
+    .main{padding: 0 0 40px; background-size: 45%; background-position: 90% 25%;}
+    .main .slick-dots{left: 405px !important;}
+    .main_section{padding: 0 1%; width: 100%; background-size: 45%; background-position: 65% 50%;}   
 
     /* about영역 */
     .about{padding: 40px 0;}
@@ -82,7 +108,6 @@
     .best{padding: 40px 0;}
     .best_section .list .contents h4{font-size: 1.7rem;}
     .best_section .list .contents p{font-size: 1.7rem; margin-top: 0;}
-    .best_section .list .contents figure .heart{width: 30px; height: 30px;}
 
     /* personal영역 */
     .personal{padding: 40px 0;}
@@ -95,9 +120,11 @@
 
 @media (max-width: 1024px){
     /* main영역 */
+    .main .slick-dots{display: none !important;}
     .main_section{background-size: 55%; background-position: 70% 50%;}
-    .main .container::before{height: 600px; width: 480px;}
     .main_section .main_img{height: 600px;}
+    .main_section .text h2{font-size: 4rem; margin-top: 5px;}
+    .main_section .text span{font-size: 2rem;}
 
     /* about영역 */
     .about h2{line-height: 14rem; font-size: 14rem;}
@@ -109,13 +136,29 @@
     .personal_section figcaption div{height: 600px;}
     .personal_section figcaption img{width:75%;}
     .personal_section .personal_text{width: 100%;}
+
 }
 
 
 @media (max-width: 960px){
     /* main영역 */
+    .main{background-position: 90% 40%;}
     .main .container::before{height: 560px; width: 450px;}
+    .main_section{background-position: 90deg;}
     .main_section .main_img{height : 560px;}
+    .main_section .text h2{font-size: 3.5rem;}
+    .main_section .text p{
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        width: 100%; 
+        display: inline-block; 
+        white-space: normal; 
+        text-align: left; 
+        word-wrap: break-word; 
+        display: -webkit-box; 
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+    }
 
     /* about영역 */
     .about h2{line-height: 11rem; font-size: 11rem;}
@@ -130,6 +173,7 @@
     /* personal영역 */
     .personal{background-size: 65%;}
     .personal_section figcaption div{height: 445px;}
+    .personal_section figcaption img{width: 70%; top: 60%;}
     .personal_text span{font-size: 1.7rem;}
 
     /* news영역 */
@@ -138,21 +182,23 @@
     .news_section .news_text span{font-size: 1.7rem; margin-bottom: 40px;}
     .news_section img:nth-of-type(2){display: none;}
     .news_section img:nth-of-type(1){width: 30%;}
+    
 }
 
 
 @media (max-width: 767px) {
     /* main영역 */
-    .main{padding: 0 0 25px;}
+    .main{padding: 30px 0; background-size: 30%;}
     .main .container::before{width: 220px; height: 260px;}
-    .main_section{background-size: 50%;}
-    .main_section .text{width: 70%;}
-    .main_section .text h2{font-size: 3.5rem; margin-top: 0;;}
-    .main_section .text span{font-size: 1.5rem;}
-    .main_section .text p{font-size: 1.5rem; margin-top: 15px;}
-    .main_section .text button{display: none;}
+
+    .main_section{background-size: 35%;}
+    .main_section .text span{font-size: 1.25rem;}
+    .main_section .text h2{font-size: 2.4rem; margin-top: 0;}
+    .main_section .text p{margin-top: 5px; font-size: 1.5rem; font-weight: normal; -webkit-line-clamp:1;}
+    .main_section .text span{font-size: 1.5rem; margin-top: 5px;}
+    .main_section .text button{margin-top: 10px;}
     .main_section .text .slide_bar{display: none;}
-    .main_section .main_img{height : 260px;}
+    .main_section .main_img{height : 260px; width: 35%;}
 
     /* about영역 */
     .about{padding: 25px 0;}
@@ -168,6 +214,8 @@
     .best_section .list .contents p{font-size: 1.5rem; margin-top: 0;}
     .best_section .list .contents .look{margin-top: 0;}
 
+    .best_section .list .contents figure .heart{width: 25px; height: 25px;}
+
     /* personal영역 */
     .personal{padding: 25px 0;}
     .personal_section figcaption div{height: 280px;}
@@ -182,9 +230,9 @@
 
 @media (max-width: 480px) {
     /* main영역 */
+    .main{padding: 0;}
     .main .container::before{width: 140px; height: 195px; margin: 0 20px 0 0;}
-    .main_section{background-size: 45%;}
-    .main_section .text h2{font-size: 2.5rem; margin-top: 0;;}
+    .main_section .text h2{font-size: 1.9rem; line-height: 2.5rem;}
     .main_section .text span{font-size: 1rem;}
     .main_section .text p{font-size: 1rem; margin-top: 0;}
     .main_section .main_img{height : 195px;}
@@ -197,6 +245,10 @@
     .best_section .list .contents{padding: 10px;}
     .best_section .list .contents h4{font-size: 1.25rem; display: inline-block;}
     .best_section .list .contents p{font-size: 1.25rem;}
+
+    .best_section .list .contents figure .heart{width: 15px; height: 15px; top: 15px; left: 15px;}
+    .heart::before, .heart::after{width: 15px; height: 15px;}
+    .best_section .list .contents figure img{width: 100%;}
 
     /* personal영역 */
     .personal_section figcaption div{height: 225px;}
