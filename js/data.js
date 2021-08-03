@@ -111,33 +111,33 @@ const customQna = [
 const resultList = [
     {
         a : [
-            {eng : 'Galactomyces Ferment', tit : '갈락토미세스 발효여과물', capa : '300ml', price : '18,000원' , img:'img/result/갈락토미세스.png'},
-            {eng : 'Moisture Plus Cream', tit : '모이스처 플러스 크림', capa : '50ml', price : '15,800원' , img:'img/result/모이스처플러스크림.png'},
-            {eng : 'organic lip essence', tit : '유기능 립에센스', capa : '13g', price : '4,900원' , img:'img/result/유기농오일립에센스.png'}
+            {eng : 'Galactomyces Ferment', tit : '갈락토미세스 발효여과물', capa : '[300ml]', price : '18,000원' , img:'img/result/갈락토미세스.png'},
+            {eng : 'Moisture Plus Cream', tit : '모이스처 플러스 크림', capa : '[50ml]', price : '15,800원' , img:'img/result/모이스처플러스크림.png'},
+            {eng : 'organic lip essence', tit : '유기능 립에센스', capa : '[13g]', price : '4,900원' , img:'img/result/유기농오일립에센스.png'}
         ]
     },
 
     {
         a : [
-            {eng : 'Houttuynia Cordata', tit : '어성초 추출물 원액', capa : '150ml', price : '6,600원', img:'img/result/어성초추출물.png'},
-            {eng : 'Idebenone ampoule', tit : '이데베논 앰플 원액', capa : '30ml', price : '13,800원', img:'img/result/이데베논앰플.png'},
-            {eng : 'Modeling Pack', tit : '콜라겐 모델링팩', capa : '30g x 7개입', price : '12,800원', img:'img/result/콜라겐모델링팩.png'}
+            {eng : 'Houttuynia Cordata', tit : '어성초 추출물 원액', capa : '[150ml]', price : '6,600원', img:'img/result/어성초추출물.png'},
+            {eng : 'Idebenone ampoule', tit : '이데베논 앰플 원액', capa : '[30ml]', price : '13,800원', img:'img/result/이데베논앰플.png'},
+            {eng : 'Modeling Pack', tit : '콜라겐 모델링팩', capa : '[30g x 7개입]', price : '12,800원', img:'img/result/콜라겐모델링팩.png'}
         ]
     },
 
     {
         a : [
-            {eng : 'Artemisia Capillaris', tit : '인진쑥 추출물 원액', capa : '150ml', price : '6,600원', img:'img/result/인진쑥추출물.png'},
-            {eng : 'Tea Tree Soap', tit : '어성초 티트리 비누', capa : '100g', price : '10,800원', img:'img/result/어성초비누.png'},
-            {eng : 'soothing cream', tit : '병풀 수딩 크림', capa : '100ml', price : '11,900원', img:'img/result/병풀수딩크림.png'}
+            {eng : 'Artemisia Capillaris', tit : '인진쑥 추출물 원액', capa : '[150ml]', price : '6,600원', img:'img/result/인진쑥추출물.png'},
+            {eng : 'Tea Tree Soap', tit : '어성초 티트리 비누', capa : '[100g]', price : '10,800원', img:'img/result/어성초비누.png'},
+            {eng : 'soothing cream', tit : '병풀 수딩 크림', capa : '[100ml]', price : '11,900원', img:'img/result/병풀수딩크림.png'}
         ]
     },
 
     {
         a : [
-            {eng : 'Centella Asiatica', tit : '병풀 추출물 원액', capa : '150ml', price : '6,600원', img:'img/result/병풀추출물.png'},
-            {eng : 'Organic jojoba oil', tit : '유기농 호호바 오일', capa : '30ml', price : '5,880원', img:'img/result/호호바오일.png'},
-            {eng : 'Modeling Pack', tit : '어성초 모델링팩', capa : '30g x 7개입', price : '12,800원', img:'img/result/어성초모델링팩.png'}
+            {eng : 'Centella Asiatica', tit : '병풀 추출물 원액', capa : '[150ml]', price : '6,600원', img:'img/result/병풀추출물.png'},
+            {eng : 'Organic jojoba oil', tit : '유기농 호호바 오일', capa : '[30ml]', price : '5,880원', img:'img/result/호호바오일.png'},
+            {eng : 'Modeling Pack', tit : '어성초 모델링팩', capa : '[30g x 7개입]', price : '12,800원', img:'img/result/어성초모델링팩.png'}
         ]
     }
 ]

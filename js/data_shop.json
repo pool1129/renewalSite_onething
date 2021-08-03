@@ -11,49 +11,49 @@
 
         "pro":{
             "skin":[
-                {"name":"어성초 추출물 어성초 원액","price":"6,600원","price_origin":"11,000원","img":"img/skin/어성초.jpg"},
-                {"name":"병풀 추출물 병풀 원액","price":"6,600원","price_origin":"11,000원","img":"img/skin/병풀.jpeg"},
-                {"name":"나이아신아마이드 10%","price":"8,800원","price_origin":"14,800원","img":"img/skin/나이아신아마이드.jpg"},
-                {"name":"인진쑥 추출물 인진쑥 원액","price":"6,600원","price_origin":"11,000원","img":"img/skin/인진쑥.jpg"},
-                {"name":"히알루론산 1% 원액 저분자","price":"9,800원","price_origin":"14,500원","img":"img/skin/히알루론산.jpg"},
-                {"name":"청귤 추출물 청귤 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/청귤.jpg"},
-                {"name":"카렌듈라 꽃잎 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/카렌듈라.jpg"},
-                {"name":"유기농 율무 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/율무.jpg"},
-                {"name":"갈락토미세스 발효여과물","price":"18,000원","price_origin":"25,000원","img":"img/skin/갈락토미세스.jpeg"},
-                {"name":"유기농 녹차 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/녹차.jpg"},
-                {"name":"브로콜리 추출물 브로콜리 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/브로콜리.jpg"},
-                {"name":"HA 히알루론산 에센스","price":"11,800원","price_origin":"16,900원","img":"img/skin/히알루론산원액.jpg"},
-                {"name":"비피다 원액","price":"12,300원","price_origin":"18,000원","img":"img/skin/비피다.jpg"},
-                {"name":"레스베라트를 스마트캡슐","price":"29,000원","price_origin":"42,000원","img":"img/skin/레스베라트롤.jpg"},
-                {"name":"제주 프로폴리스+꿀 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/제주프로폴리스+꿀.jpg"}
+                {"code":"0", "name":"어성초 추출물 어성초 원액","price":"6,600원","price_origin":"11,000원","img":"img/skin/어성초.jpg"},
+                {"code":"1", "name":"병풀 추출물 병풀 원액","price":"6,600원","price_origin":"11,000원","img":"img/skin/병풀.jpeg"},
+                {"code":"2", "name":"나이아신아마이드 10%","price":"8,800원","price_origin":"14,800원","img":"img/skin/나이아신아마이드.jpg"},
+                {"code":"3", "name":"인진쑥 추출물 인진쑥 원액","price":"6,600원","price_origin":"11,000원","img":"img/skin/인진쑥.jpg"},
+                {"code":"4", "name":"히알루론산 1% 원액 저분자","price":"9,800원","price_origin":"14,500원","img":"img/skin/히알루론산.jpg"},
+                {"code":"5", "name":"청귤 추출물 청귤 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/청귤.jpg"},
+                {"code":"6", "name":"카렌듈라 꽃잎 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/카렌듈라.jpg"},
+                {"code":"7", "name":"유기농 율무 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/율무.jpg"},
+                {"code":"8", "name":"갈락토미세스 발효여과물","price":"18,000원","price_origin":"25,000원","img":"img/skin/갈락토미세스.jpeg"},
+                {"code":"9", "name":"유기농 녹차 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/녹차.jpg"},
+                {"code":"10", "name":"브로콜리 추출물 브로콜리 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/브로콜리.jpg"},
+                {"code":"11", "name":"HA 히알루론산 에센스","price":"11,800원","price_origin":"16,900원","img":"img/skin/히알루론산원액.jpg"},
+                {"code":"12", "name":"비피다 원액","price":"12,300원","price_origin":"18,000원","img":"img/skin/비피다.jpg"},
+                {"code":"13", "name":"레스베라트를 스마트캡슐","price":"29,000원","price_origin":"42,000원","img":"img/skin/레스베라트롤.jpg"},
+                {"code":"14", "name":"제주 프로폴리스+꿀 추출물 원액","price":"8,800원","price_origin":"14,800원","img":"img/skin/제주프로폴리스+꿀.jpg"}
             ],
 
             "essence":[
-                {"name":"이데베논 앰플 원액","price":"13,800원","price_origin":"23,000원","img":"img/Essence/이데베논앰플.jpg"},
-                {"name":"유기농 티트리 오일 10ml","price":"8,900원","price_origin":"12,000원","img":"img/Essence/티트리오일.jpg"},
-                {"name":"유기농 호호바 오일","price":"5,880원","price_origin":"8,400원","img":"img/Essence/호호바오일.jpg"},
-                {"name":"히알루론산 1%원액 저분자","price":"9,800원","price_origin":"14,500원","img":"img/Essence/히알루론산.jpg"},
-                {"name":"HA 히알루론산 에센스","price":"11,800원","price_origin":"16,900원","img":"img/Essence/HA.jpg"},
-                {"name":"레스베라트롤 스마트캡슐","price":"29,000원","price_origin":"42,000원","img":"img/Essence/스마트캡슐.jpg"}
+                {"code":"15", "name":"이데베논 앰플 원액","price":"13,800원","price_origin":"23,000원","img":"img/Essence/이데베논앰플.jpg"},
+                {"code":"16", "name":"유기농 티트리 오일 10ml","price":"8,900원","price_origin":"12,000원","img":"img/Essence/티트리오일.jpg"},
+                {"code":"17", "name":"유기농 호호바 오일","price":"5,880원","price_origin":"8,400원","img":"img/Essence/호호바오일.jpg"},
+                {"code":"18", "name":"히알루론산 1%원액 저분자","price":"9,800원","price_origin":"14,500원","img":"img/Essence/히알루론산.jpg"},
+                {"code":"19", "name":"HA 히알루론산 에센스","price":"11,800원","price_origin":"16,900원","img":"img/Essence/HA.jpg"},
+                {"code":"20", "name":"레스베라트롤 스마트캡슐","price":"29,000원","price_origin":"42,000원","img":"img/Essence/스마트캡슐.jpg"}
             ],
 
             "cream":[
-                {"name":"병풀 수딩크림 100ml","price":"11,900원","price_origin":"20,000원","img":"img/Cream/병풀수딩크림.jpg"},
-                {"name":"모이스처 플러스 크림","price":"15,800원","price_origin":"22,000원","img":"img/Cream/모이스처플러스크림.jpg"},
-                {"name":"유기농오일 립에센스","price":"4,900원","price_origin":"7,000원","img":"img/Cream/립케어.jpg"}
+                {"code":"21", "name":"병풀 수딩크림 100ml","price":"11,900원","price_origin":"20,000원","img":"img/Cream/병풀수딩크림.jpg"},
+                {"code":"22", "name":"모이스처 플러스 크림","price":"15,800원","price_origin":"22,000원","img":"img/Cream/모이스처플러스크림.jpg"},
+                {"code":"23","name":"유기농오일 립에센스","price":"4,900원","price_origin":"7,000원","img":"img/Cream/립케어.jpg"}
             ],
 
             "cleanser":[
-                {"name":"어성초 티트리 천연비누","price":"10,800원","price_origin":"18,000원","img":"img/Cleanser/어성초티트리비누.jpg"},
-                {"name":"모델링팩 1세트(30g x 7개입)","price":"12,800원","price_origin":"16,000원","img":"img/Cleanser/모델링팩 (2).jpg"},
-                {"name":"모델링팩 1kg 대용량","price":"28,000원","price_origin":"33,000원","img":"img/Cleanser/모델링팩.jpg"}
+                {"code":"24", "name":"어성초 티트리 천연비누","price":"10,800원","price_origin":"18,000원","img":"img/Cleanser/어성초티트리비누.jpg"},
+                {"code":"25", "name":"모델링팩 1세트(30g x 7개입)","price":"12,800원","price_origin":"16,000원","img":"img/Cleanser/모델링팩 (2).jpg"},
+                {"code":"26", "name":"모델링팩 1kg 대용량","price":"28,000원","price_origin":"33,000원","img":"img/Cleanser/모델링팩.jpg"}
             ],
 
             "acc":[
-                {"name":"원형 빅 패드 70매입 1개","price":"4,800원","price_origin":"4,800원","img":"img/Acc/공병.jpg"},
-                {"name":"투명 미스트 공병 100ml 1개","price":"990원","price_origin":"990원","img":"img/Acc/마스크시트.jpg"},
-                {"name":"순면 마스크 시트 20매입 1개","price":"2,900원","price_origin":"2,900원","img":"img/Acc/패드.jpg"},
-                {"name":"DIY 키트 3종 세트","price":"1,900원","price_origin":"1,900원","img":"img/Acc/세트.jpg"}
+                {"code":"27", "name":"원형 빅 패드 70매입 1개","price":"4,800원","price_origin":"4,800원","img":"img/Acc/공병.jpg"},
+                {"code":"28", "name":"투명 미스트 공병 100ml 1개","price":"990원","price_origin":"990원","img":"img/Acc/마스크시트.jpg"},
+                {"code":"29","name":"순면 마스크 시트 20매입 1개","price":"2,900원","price_origin":"2,900원","img":"img/Acc/패드.jpg"},
+                {"code":"30", "name":"DIY 키트 3종 세트","price":"1,900원","price_origin":"1,900원","img":"img/Acc/세트.jpg"}
             ]
         }
     }

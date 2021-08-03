@@ -19,6 +19,8 @@ function init(){
         
         const intro = document.querySelector('.intro_text'),
               menu = document.querySelectorAll('.text_section .menu li');
+        let favorite;
+        let favoriteArr = []
         
         inTitSub = `<p>${res.work.intro[0].tit_sub}</p>`;
         inTit=`<h3>${res.work.intro[0].tit}</h3>`;
@@ -66,6 +68,7 @@ function init(){
                     fadeDown();
                     acc();
                 }
+                eventClick();
             });
         }
 
@@ -92,6 +95,8 @@ function init(){
                 var slideUp = document.createElement('div');
 
                 content.classList.add('content');
+                content.setAttribute('data-code',res.work.pro.skin[i].code);
+
                 product.classList.add('product');
                 slideUp.classList.add('slide_up');
 
@@ -125,6 +130,7 @@ function init(){
                 var slideUp = document.createElement('div');
 
                 content.classList.add('content');
+                content.setAttribute('data-code',res.work.pro.essence[i].code);
                 product.classList.add('product');
                 slideUp.classList.add('slide_up');
 
@@ -157,6 +163,7 @@ function init(){
                 var slideUp = document.createElement('div');
 
                 content.classList.add('content');
+                content.setAttribute('data-code',res.work.pro.cream[i].code);
                 product.classList.add('product');
                 slideUp.classList.add('slide_up');
 
@@ -189,6 +196,7 @@ function init(){
                 var slideUp = document.createElement('div');
 
                 content.classList.add('content');
+                content.setAttribute('data-code',res.work.pro.cleanser[i].code);
                 product.classList.add('product');
                 slideUp.classList.add('slide_up');
 
@@ -221,6 +229,7 @@ function init(){
                 var slideUp = document.createElement('div');
 
                 content.classList.add('content');
+                content.setAttribute('data-code',res.work.pro.acc[i].code);
                 product.classList.add('product');
                 slideUp.classList.add('slide_up');
 
@@ -243,56 +252,79 @@ function init(){
             }
         }
 
-        const heartIcon = document.querySelectorAll('.heart');
-        let favorite = [];
+        function eventClick(){
+            const heartIcon = document.querySelectorAll('.heart');
+            const content = document.querySelectorAll('.content');
+            for(let i=0; i<content.length; i++){
+                heartIcon[i].addEventListener('click',function(){
 
-        let countHeart = '';
-        var action = true;
+                        this.classList.toggle('active');
+                        const hasClass = heartIcon[i].classList.contains('active');
+                        let code = content[i].getAttribute('data-code');
 
-        function push(i){
-            favorite.push(i);
-            localStorage.favoriteNum = favorite;
+                        if( !hasClass ){
+                            push(code,'del');
+                        }else{
+                            push(code,'add')
+                        }
+                        hartPrint();
+                 });
+            }   
+            hartPrint();
+        }
+        eventClick();
+
+        function hartPrint(){
+            const list = document.querySelectorAll('.list > div')
+            favorite = localStorage.favoriteNum.split(',');
+
+            for(let j=0; j<favorite.length; j++){
+               for(let k=0;k<list.length;k++){
+                    if(list[k].dataset.code === favorite[j]){
+                        const item = list[k].querySelector('.heart');
+                        item.classList.add('active');
+                    }
+                }
+            }
+            console.log(favorite);
+        }
+        
+
+        function push(i,str){
 
             if(localStorage.favoriteNum == null){
-                favorite = [];
+                localStorage.favoriteNum = '';
             }else{
+                localStorage.favoriteNum = localStorage.favoriteNum + ',' + i;    
+
                 favorite = localStorage.favoriteNum.split(',');
-
                 const set = new Set(favorite);
-                const favoriteArr = [...set];
+                favoriteArr = [...set];
+                favoriteArr[0] == '' ? favoriteArr.shift():''; //첫배열이 빈값이라면 삭제
 
-                for(let j=0; j<favoriteArr.length; j++){
-                    heartIcon[favoriteArr[j]].classList.add('active');
+                if(str == 'del'){
+                    for(let j=0; j<favoriteArr.length; j++){
+                        if(favoriteArr[j] == i){
+                            favoriteArr.splice(j,1);
+
+                        }
+                    }
+                                    
+                }else{
+                    for(let j=0; j<favoriteArr.length; j++){
+                        if(favoriteArr[j] == 'null'){
+                            favoriteArr.pop(j);
+                        }
+                    }
                 }
-
-                countHeart = favoriteArr.length;
-
-                console.log(favoriteArr);
+                
+                localStorage.favoriteNum = favoriteArr;   
+                
             }
         }
-
-        for(let i=0; i<heartIcon.length; i++){
-            heartIcon[i].addEventListener('click',function(){
-
-                this.classList.toggle('active');
-
-                const hasClass = heartIcon[i].classList.contains('active');
-
-                if( !hasClass ){
-                    favorite.pop(i);
-                }else{
-                    push(i)
-                }
-            });
-        }
-
+        push(null);
     }
 }
 
 window.onload = init;
-
-
-
-
-
 

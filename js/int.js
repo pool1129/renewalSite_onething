@@ -80,15 +80,15 @@ $(function(){
 
 
         //heart_icon
-        const heartIcon = document.querySelector('.header .icon .shopping');
+        // const heartIcon = document.querySelector('.header .icon .shopping');
 
-        heartIcon.addEventListener('click',function(){
-            const span = document.querySelector('.header .icon a:nth-of-type(3) span');
-            const heart = document.querySelector('.header .icon .shopping path');
+        // heartIcon.addEventListener('click',function(){
+        //     const span = document.querySelector('.header .icon a:nth-of-type(3) span');
+        //     const heart = document.querySelector('.header .icon .shopping path');
 
-            span.classList.toggle('active');
-            heart.classList.toggle('active');
-        });
+        //     span.classList.toggle('active');
+        //     heart.classList.toggle('active');
+        // });
 
     });
     $('footer').load('inc.html footer > div',function(){

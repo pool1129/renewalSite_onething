@@ -36,7 +36,7 @@ header{background-color: #fff;}
 .select_section > div{background-color:#fff; width: 18%; border: 1px solid #6a6a6a; margin-bottom: 24px; padding: 70px 45px; font-size: 2.4rem;}
 
 .anwerBox{height: 100%; padding-bottom: 10px;}
-.answerList {border: 1px solid #6a6a6a; width: 80%; padding: 15px; margin: 20px; height: 25%; background-color: #fff; font-size: 2.4rem;}
+.answerList {border: 1px solid #6a6a6a; width: 80%; padding: 15px; margin: 20px; height: 25%; background-color: #fff; font-size: 2.4rem; font-weight: normal;}
 
 /* :hover */
 .answerList:hover{background-color: rgba(128, 94, 64, 0.8); color: #fff; font-weight: bold;}
@@ -89,7 +89,7 @@ header{background-color: #fff;}
 
 @media (max-width : 480px){
     .main_section p{font-size: 1.25rem;}
-    .main_section h3{line-height: 3.5rem; width: 85%; font-size: 2rem;}
+    .main_section h3{line-height: 3.5rem; width: 100%; font-size: 2rem;}
 
     .result_section .list .content p{font-size: 1.5rem;}
 

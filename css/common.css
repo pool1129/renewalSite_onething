@@ -62,11 +62,13 @@ header{width: 100%; background-color: #F8F3EF; position: relative; transition: a
 
 .header .icon .shopping{margin-right: 0; position: relative; width: 32px; height: 32px; transition: fill 0.5s ease-in-out;}
 
-.header .icon .shopping path.active{fill:#FF1818;}
+.header .icon .shopping path:hover{fill:#FF1818;}
+.header .icon .shopping:hover + span{opacity: 1;}
+
 
 .header .icon a:nth-of-type(3){position: relative;}
 .header .icon a:nth-of-type(3) span{z-index:1; font-size: 2rem; color:#fff; transition: all 0.3s ease; opacity: 0; width: 30px; height : 30px; background-color: #805E40; position: absolute; top: 20px; right: 0px; border-radius: 20px; display: flex; justify-content: center; align-items: center;}
-.header .icon a:nth-of-type(3) span.active{opacity: 1;}
+/* .header .icon a:nth-of-type(3) span.active{opacity: 1;} */
 .header .icon a:nth-of-type(3) span::before{content: ''; display: block; position: absolute; top:-5px; right:5px; margin-left: -10px; border-bottom: 10px solid #805E40; border-left: 10px solid transparent; border-right: 10px solid transparent;}
 
 .header .icon .search{display: inline-block;}
